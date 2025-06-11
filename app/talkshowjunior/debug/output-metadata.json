@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.iyuba.talkshow.junior",
+  "variantName": "talkshowjuniorDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 267,
+      "versionName": "3.8.0318",
+      "outputFile": "talkshowjunior-3.8.0318-debug.apk"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_next_word" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/exam_not_select" />
+
+</selector>

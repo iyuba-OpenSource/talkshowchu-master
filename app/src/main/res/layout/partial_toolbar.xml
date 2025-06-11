@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_toolbar"
+
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    toolbar:layout_scrollFlags="scroll|enterAlways"
+    toolbar:navigationIcon="?attr/homeAsUpIndicator"
+    toolbar:popupTheme="@style/ToolbarPopupTheme"
+    toolbar:theme="@style/ToolbarTheme"
+    toolbar:titleTextAppearance="@style/ToolbarTitle">
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,578 @@
+<resources>
+
+    <string name="tencent_share_id">tencent100836790</string>
+    <string name="version">版本号：1.0    英语口语秀</string>
+    <string name="sec_verify_demo_one_key_login">一键登录</string>
+    <string name="sec_verify_demo_agreement_text_all">用户协议</string>
+    <string name="sec_verify_demo_mob_service">隐私条款</string>
+    <string name="sec_verify_demo_agreement_text_start">登录即表明同意</string>
+    <string name="sec_verify_demo_agreement_text_end"> </string>
+    <string name="sec_verify_demo_other_login">其它账号登录</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-0386301933791128/6590062319</string>
+    <string name="banner_ad_app_id" translatable="false">ca-app-pub-0386301933791128~5113329119</string>
+    <string name="umeng_channel_normal" translatable="false">normal</string>
+    <string name="user_protocol">1.为了更方便您使用我们的软件，我们会根据您使用具体功能时，申请必要的权限，如相机，位置，麦克风，存储权限等，可以点击下面的链接了解详情。
+        \n2.使用本app需要您了解并同意用户协议及隐私政策，点击同意即代表您已经阅读并且同意该协议。</string>
+    <string name="user_permission_protocol">1.为了更方便您使用我们的软件，我们会根据您使用具体功能时，申请必要的权限，如相机，位置，麦克风，存储权限等，当然您也可以在应用的设置页面进行权限的管理。
+        \n2.使用本app需要您了解并同意用户协议及隐私政策，点击同意即代表您已经阅读并且同意该协议</string>
+    <string name="user_mini_protocol">1.为了更方便您使用我们的软件，我们会根据您使用具体功能时，申请必要的权限，如相机，位置，麦克风，存储权限等，可以点击下面的链接了解详情。
+        \n2.我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、获取用户的软件安装列表以提供统计分析服务，友盟隐私权政策链接。
+        \n3.我们的产品集成MobTech短信/认证服务，需要终端用户提供手机号码或授权MobTech获取设备标识等相关信息，相关隐私权政策链接。
+        \n4.使用本app需要您了解并同意用户协议及隐私政策，点击同意即代表您已经阅读并且同意该协议</string>
+    <string name="area_renjiao">人教版使用地区：\n\n
+安徽省: 安庆市 毫州市 池州市 滁州市 阜阳市 淮北市 淮南市 黄山市 六安市 宿州市 铜陵市 芜湖市 宣城市\n\n
+北京市\n\n
+河北省: 沧州市 承德市 邯郸市 衡水市 廊坊市 秦皇岛市 石家庄市\n\n
+福建省: 厦门市\n\n
+甘肃省: 甘南藏族自治州 嘉峪关市 金昌市 兰州市 临夏回族自治州 陇南市 平凉市 庆阳市 武威市 张掖市\n\n
+广东省: 潮州市 东莞市 河源市 揭阳市 梅州市 汕头市 汕尾市 韶关市 阳江市 湛江市 肇庆市 中山市\n\n
+广西壮族自治区: 百色市 北海市 防城港市 贵港市 河池市 贺州市 玉林市\n\n
+贵州省: 安顺市 贵阳市 六盘水市 黔东南苗族侗族自治州 黔南布依族苗族自治州 遵义市\n\n
+海南省: 保亭黎族苗族自治县 澄迈县 儋州市 临高县 陵水黎族自治县 屯昌县 万宁市 文昌市 五指山市\n\n
+河南省: 安阳市 鹤壁市 济源市 焦作市 开封市 洛阳市 许昌市 郑州市\n\n
+黑龙江省: 大兴安岭地区 哈尔滨市 鹤岗市 黑河市 佳木斯市 牡丹江市 齐齐哈尔市 绥化市\n\n
+湖北省: 鄂州市 黄冈市 黄石市 荆门市 荆州市 十堰市 随州市 天门市 武汉市 仙桃市 襄阳市 孝感市 宜昌市\n\n
+湖南省：长沙市 常德市 郴州市 怀化市 娄底市 邵阳市 湘潭市 湘西土家族苗族自治州 益阳市 永州市 岳阳市 张家界市
+        株洲市\n\n
+吉林省：白城市 白山市 长春市 吉林市 辽源市 四平市 松原市 通化市 延边朝鲜族自治州\n\n
+江西省：抚州市 赣州市 吉安市 景德镇市 九江市 南昌市 萍乡市 上饶市 新余市 宜春市 鹰潭市\n\n
+辽宁省：鞍山市 本溪市 朝阳市 丹东市 抚顺市 葫芦岛市 锦州市 辽阳市 盘锦市 铁岭市\n\n
+内蒙古自治区：阿拉善盟 巴彦淖尔市 包头市 乌海市 乌兰察布市 锡林郭勒盟 兴安盟\n\n
+宁夏回族自治区：固原市 银川市 中卫市\n\n
+青海省：海北藏族自治州 海东市 海南藏族自治州 海西蒙古族藏族自治州 西宁市\n\n
+山东省：滨州市 菏泽市 济南市 济宁市 临沂市 青岛市 日照市 枣庄市\n\n
+山西省：长治市 大同市 晋城市 晋中市 临汾市 吕梁市 朔州市 太原市 忻州市 阳泉市 运城市\n\n
+陕西省：安康市 宝鸡市 西安市 延安市 榆林市\n\n
+四川省：阿坝藏族羌族自治州 巴中市 成都市 达州市 德阳市 甘孜藏族自治州 广安市 广元市 凉山彝族自治州 泸州市 眉山市 绵阳市
+        内江市 南充市 攀枝花市 遂宁市 雅安市 宜宾市 资阳市 自贡市\n\n
+云南省: 楚雄彝族自治州 大理白族自治州 红河哈尼族彝族自治州 昆明市 临沧市 怒江傈僳族自治州 普洱市 曲靖市 文山壮族苗族自治州
+        玉溪市\n\n
+浙江省：杭州市 湖州市 丽水市 宁波市 绍兴市 台州市 舟山市\n\n
+重  庆：重庆市</string>
+    <string name="area_waiyan">外研版使用地区:\n\n
+安徽省: 合肥市\n\n
+广东省: 佛山市 惠州市 江门市 茂名市\n\n
+广西壮族自治区: 桂林市 柳州市 南宁市\n\n
+海南省: 定安县 东方市 海口市 琼海市 琼中黎族苗族自治县 三亚市\n\n
+黑龙江省: 大庆市 双鸭山市\n\n
+辽宁省：大连市 阜新市\n\n
+内蒙古自治区: 鄂尔多斯市 呼和浩特市\n\n
+宁夏回族自治区：石嘴山市 吴忠市\n\n
+山东省: 德州市 聊城市 潍坊市\n\n
+陕西省: 商洛市 渭南市\n\n
+四川省: 广安市 乐山市\n\n
+天  津: 天津市\n\n
+浙江省: 嘉兴市 金华市 衢州市 温州市\n\n
+</string>
+    <string name="area_beishi">北师版使用地区：\n\n
+北京市</string>
+    <string name="area_renai">仁爱版使用地区：\n\n
+福建省: 福州市 龙岩市 南平市 宁德市 莆田区 泉州市 三明市 漳州市\n\n
+广东省: 清远市 云浮市\n\n
+河北省: 邢台市\n\n
+贵州省: 毕节市 黔西南布依族苗族自治州 铜仁市\n\n
+河南省: 漯河市 南阳市 平顶山市 濮阳市 三门峡市 新乡市 信阳市 仁爱版 驻马店市\n\n
+湖北省: 恩施土家族苗族自治州 潜江市 咸宁市\n\n
+湖南省: 衡阳市\n\n
+内蒙古自治区: 赤峰市 呼伦贝尔市 通辽市\n\n
+云南省: 保山市 德宏傣族景颇族自治州 丽江市 西双版纳傣族自治州 昭通市</string>
+    <string name="area_jiban">冀教版使用地区：\n\n
+河北省: 保定市 唐山市 张家口市\n\n
+甘肃省: 白银市 定西市 酒泉市天水市\n\n
+陕西省: 汉中市\n\n
+陕西省: 铜川市 咸阳市</string>
+    <string name="area_yilin">牛津译林版使用地区：\n\n
+安徽省: 蚌埠市 马鞍山\n\n
+广西壮族自治区: 崇左市 来宾市 钦州市 梧州市\n\n
+河南省: 商丘市\n\n
+江苏省：常州市 淮安市 连云港市 南京市 南通市 苏州市 宿迁市 泰州市 无锡市 徐州市 盐城市 扬州市 镇江市</string>
+    <string name="area_lujiao">鲁教版(五四制)使用地区：\n\n
+黑龙江省: 鸡西市 七台河市\n\n
+山东省: 东营市 莱芜市 泰安市 威海市 烟台市 淄博市</string>
+    <string name="submit">提交</string>
+    <string name="ok">确定</string>
+    <string name="alert_title">提示</string>
+    <string name="alert_btn_ok">确定</string>
+    <string name="alert_btn_cancel">取消</string>
+    <string name="permission_ok">同意</string>
+    <string name="permission_cancel">不同意</string>
+    <string name="vip_gongzhonghao">打开微信小程序, 立即领取3天全站会员试用。</string>
+    <string name="logout_alert">登录状态可以享受更多爱语服务\n您确定要退出吗？</string>
+    <string name="clear_user_alert">账号一旦注销，将删除该账号下存储的一切关于您个人信息及APP使用信息的记录，且不能再继续使用该账号进行登录学习，确定要注销账号吗？</string>
+    <string name="clear_user_success">注销成功！</string>
+    <string name="clear_user_tip">请输入密码注销账号</string>
+    <string name="login_out_success">退出登录成功！</string>
+    <string name="main_home_title">课程</string>
+    <string name="main_series_book">教材</string>
+    <string name="main_tab_word" translatable="false">单词</string>
+    <string name="main_moc_title">微课</string>
+    <string name="main_video_title">视频</string>
+    <string name="main_lesson_title">口语秀</string>
+    <string name="main_me_title">我</string>
+    <string name="main_top_name">初中学英语</string>
+    <string name="study_top_name">配音评测</string>
+    <string name="take_english_words">请取英文单词</string>
+    <string name="no_explanation">当前单词未找到释义!</string>
+    <string name="study_first" translatable="false">当前已经是第一句！</string>
+    <string name="study_last" translatable="false">当前已经是最后一句！</string>
+    <string name="person_detail_undefined">尚未填写</string>
+
+    <string name="my_voa">我的口语秀</string>
+    <string name="local_voa">本地口语秀</string>
+    <string name="huawei_name">初中英语背单词</string>
+
+    <string name="hot_video">热门视频</string>
+    <string name="anime_voice">动漫配音</string>
+    <string name="music_learning">听歌学习</string>
+    <string name="more">更多</string>
+    <string name="please_check_network">请检查网络是否可用！</string>
+    <string name="main_need_network">您没有开启数据网络，使用功能受限！</string>
+    <string name="request_fail">请求失败~</string>
+    <string name="request_no_more">没有更多数据了。</string>
+    <string name="ceshi_error">评测有误，请稍后尝试~</string>
+    <string name="ceshi_error_init">评测初始化失败，请检查是否给了录音权限~</string>
+    <string name="ceshi_ok">评测成功~</string>
+    <!--payAccount -->
+    <string name="welcome">欢迎您：</string>
+    <string name="order">订单： </string>
+    <string name="payorder">订单：  </string>
+    <string name="need_pay_rmb">需要支付人民币：</string>
+    <string name="choose_pay_method">选择支付方式</string>
+    <string name="pay_confirm">确认支付</string>
+
+    <string name="dialog_action_ok">确定</string>
+    <string name="dialog_action_cancel">取消</string>
+    <string name="dialog_error_title">Sorry~</string>
+    <string name="error_loading">加载错误~</string>
+    <string name="empty_content">您要查找的内容不存在~</string>
+    <string name="introduce">简介</string>
+    <string name="ranking">排行榜</string>
+    <string name="recommend">相关</string>
+    <string name="comment">评论</string>
+
+    <string name="thumbs_success">点赞成功</string>
+    <string name="thumbs_failure">点赞失败</string>
+    <string name="vote_success">投票成功</string>
+    <string name="vote_failure">投票失败</string>
+    <string name="comment_success">评论成功</string>
+    <string name="comment_failure">评论失败</string>
+    <string name="preview_dubbing">预览配音</string>
+    <string name="not_dubbing">还没有配音哦，点击话筒试试吧</string>
+    <string name="collect">收藏</string>
+    <string name="have_collected">已收藏</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="collect_failure">收藏失败</string>
+    <string name="share">分享</string>
+    <string name="difficulty">难度:</string>
+    <string name="record_time">{0}s</string>
+    <string name="send">发送</string>
+    <string name="listening_test">试听</string>
+    <string name="dubbing_success">恭喜您完成配音！</string>
+    <string name="publish_and_share">发布并分享</string>
+    <string name="share_to_friends">分享给好友</string>
+    <string name="save_local">保存本地</string>
+    <string name="back_to_home_page">返回视频首页</string>
+    <string name="share_friend_listen">分享给小伙伴们听听！</string>
+    <string name="continue_dubbing">继续配音</string>
+    <string name="unfinished_dubbing_tip">您还没有完成配音，是否继续配音？</string>
+    <string name="save_draft">保存到草稿箱</string>
+    <string name="return_direct">删除草稿并返回</string>
+
+    <string name="hint_top">友情提示:</string>
+
+    <!-- info -->
+    <string name="welcome_back">欢迎回来，{0} </string>
+    <string name="info_1">请选择要删除的消息</string>
+    <string name="info_2">评论加载失败，请检查网络</string>
+    <string name="info_3">加载更多</string>
+    <string name="info_4">已加载全部评论</string>
+    <string name="info_5">目前还没有评论</string>
+
+    <!-- 意见反馈界面相关字符资源 -->
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_info">您反馈的问题和建议，将是我们进步的动力！</string>
+    <string name="feedback_contact">联系方式（有效的邮箱地址）</string>
+    <string name="feedback_info_title">反馈或建议</string>
+    <string name="feedback_contact_title">联系方式</string>
+    <string name="feedback_submit_success">意见反馈已提交！</string>
+    <string name="feedback_info_null">反馈信息不能为空！</string>
+    <string name="feedback_email_null">请填写email！</string>
+    <string name="feedback_effective_email">请填写有效的email！</string>
+    <string name="feedback_network_error">网络错误，未能提交反馈！</string>
+    <string name="feedback_submitting">提交中，请稍后！</string>
+
+    <!-- 用户登录界面相关字符资源 -->
+    <string name="login">登录</string>
+    <string name="login_title">用户登录</string>
+    <string name="login_remember_pwd">记住密码</string>
+    <string name="login_auto_login">自动登录</string>
+    <string name="login_check_user_id_null">用户ID不能为空</string>
+    <string name="login_check_effective_user_id">请填写有效的用户ID</string>
+    <string name="login_check_effective_user_data">请填写有效的用户信息</string>
+    <string name="login_check_user_pwd_null">用户密码不能为空</string>
+    <string name="login_check_user_pwd_constraint">密码为6~20个字符</string>
+    <string name="login_failed">登录失败！请检查网络是否可用！</string>
+    <string name="login_find_password">忘记密码？</string>
+    <string name="login_register">注册</string>
+    <string name="login_username_hint">手机号/用户名/邮箱</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="please_login">请先登录</string>
+
+    <!-- 注册界面相关字符资源 -->
+    <string name="register_title">用户注册</string>
+    <string name="register_user_name_hint">3~15位英文、数字或汉字</string>
+    <string name="register_confirm_pwd_hint">确认密码</string>
+    <string name="register_email_hint">输入常用的邮箱，用于找回密码</string>
+    <string name="register_check_username_1">用户名需要3~15字符之间</string>
+    <string name="register_check_username_2">字母、数字或者下划线</string>
+    <string name="register_check_pwd_1">密码需要6~20字符</string>
+    <string name="register_check_pwd_2">大小写字母、数字、符号</string>
+    <string name="register_check_pwd_diff">两次密码不匹配！</string>
+    <string name="register_check_email_1">用户email不能为空</string>
+    <string name="register_check_email_2">请填写有效email方便与您及时联系！</string>
+    <string name="register_by_phone"><u>手机注册>>></u>></string>
+    <string name="register_username_exist">用户名已存在,请重新填写!</string>
+
+    <!-- Regist -->
+    <string name="register_email_used">邮箱已经被注册</string>
+    <string name="register_operating">操作中，请等候</string>
+    <string name="register_get_code">获取验证码</string>
+    <string name="register_next">下一步</string>
+    <string name="register_by_email"><u>邮箱方式注册>>>>></u></string>
+    <string name="register_by_web"><u>网页注册>>>>></u></string>
+    <string name="register_input_phone">请输入你的手机号</string>
+    <string name="register_input_code">输入验证码</string>
+    <string name="register_code_sending">验证码正在路上，请稍候…</string>
+    <string name="register_input_right_num">请输入正确手机号码</string>
+    <string name="register_server_send_err">服务器发送短信失败，请重新尝试</string>
+    <string name="register_verify_err">验证失败，请重试！</string>
+    <string name="register_verify_success">验证成功</string>
+    <string name="register_code_err">验证码错误！</string>
+    <string name="register_code_sent">验证码已经发送，请等待接收</string>
+    <string name="register_code_expired">验证码已过期，请重新尝试</string>
+    <string name="register_username_hint">用户名(3-15位英文、数字、中文)</string>
+    <string name="register_pwd_hint">密码(6-20位英文、数字、下划线)</string>
+    <string name="register_phone_registered">此号码已经注册</string>
+    <string name="register_success">注册成功！欢迎加入爱语吧！</string>
+    <string name="register_fail">注册失败...请重试</string>
+    <string name="register_input_complete">填入用户名和密码就可以完成注册</string>
+    <string name="register_wait_to_retry">秒后重试</string>
+
+    <!-- uploadimage -->
+    <string name="upload_image">上传头像</string>
+    <string name="upload_image_current">当前头像</string>
+    <string name="upload_image_text">上传一张靓照吧  展现自己个性</string>
+    <string name="upload_image_complete">完成</string>
+    <string name="upload_image_by_camera">相机拍摄</string>
+    <string name="upload_image_by_local">选择本地图片</string>
+    <string name="upload_image_skip">跳过</string>
+    <string name="upload_image_uploading">正在上传头像，请稍候~~~</string>
+    <string name="upload_image_success">您的头像修改成功</string>
+    <string name="upload_image_upload_fail">提交失败，请重新上传</string>
+    <string name="upload_image_modify_fail">头像修改失败，请重新上传</string>
+
+    <!-- 手机号注册页面 -->
+    <string name="read_agree_policy">我已阅读并同意使用条款和隐私政策</string>
+    <string name="verify_code_not_null">验证码不能为空</string>
+    <string name="seconds_for_get_code">请输入验证码({0}s)</string>
+
+    <!-- 关于界面相关字符资源 -->
+    <string name="weixin">用户反馈群号:yubatkx</string>
+    <string name="about_app">    学外语，交朋友，尽在爱语吧。爱语吧是VOA官方授权合作伙伴，提供精品外语学习应用。
+        VOA慢速英语，VOA常速英语，BBC英语，英语头条，听歌学英语，TED英语演讲，英语四六级听力，托福雅思考试官，
+        日语一级、二级、三级等。如您有任何问题或建议请与我们联系。</string>
+
+    <!--vip内容描述-->
+    <!--<string name="vip_app" translatable="false">1.尊贵VIP标识\n2.尊享去广告(开屏广告除外)、PDF免积分导出、语音调速等特权\n3.VIP会员全部文章无限下载\n4.非VIP用户单词闯关体验闯1关, VIP会员无限单词闯关\n5.非VIP用户每篇文章句子评测仅限3句, VIP会员无限制评测\n6.非VIP用户口语秀配音仅限前3篇，VIP会员无限配音\n7.VIP会员无限制保存视频到手机相册\n8.更多VIP功能，敬请期待\n\nTips:本应用VIP仅限于安卓版本的当前应用使用</string>
+    <string name="vip_all" translatable="false">1.尊贵VIP标识\n2.尊享去广告(开屏广告除外)、PDF免积分导出、语音调速等特权\n3.VIP会员全部文章无限下载\n4.非VIP用户单词闯关体验闯1关, VIP会员无限单词闯关\n5.非VIP用户每篇文章句子评测仅限3句, VIP会员无限制评测\n6.非VIP用户口语秀配音仅限前3篇，VIP会员无限配音\n7.VIP会员无限制保存视频到手机相册\n8.更多VIP功能，敬请期待\n\nTips:全站VIP适用于iyuba.cn旗下所有应用</string>
+    <string name="vip_golder">1. 微课模块: 小学英语全部课程；初中英语全部课程；新概念英语全4册；VOA英语Lisa博士、Rachel美语发音；
+   Alex博士BBC英式发音；四六级名师陈苏灵、李尚龙、石雷鹏、尹延、章敏等；托福、雅思、
+   考研、学位英语、中职英语等名师讲解所有课程全部免费学习；(根据app类型展示)
+        \n\n2. 尊享爱语吧旗下所有APP全站会员特权。
+        \n\nTips:黄金会员VIP适用于iyuba.cn旗下所有应用
+    </string>-->
+    <string name="vip_app" translatable="false">1.尊贵VIP标识\n2.尊享去广告、PDF免积分导出、语音调速等特权\n3.VIP会员全部文章无限下载\n4.非VIP用户单词闯关体验闯1关, VIP会员无限单词闯关\n5.非VIP用户每篇文章句子评测仅限3句, VIP会员无限制评测\n6.非VIP用户口语秀配音仅限前3篇，VIP会员无限配音\n7.VIP会员无限制保存视频到手机相册\n8.更多VIP功能，敬请期待\n\nTips:本应用VIP仅限于安卓版本的当前应用使用</string>
+    <string name="vip_all" translatable="false">1.尊贵VIP标识\n2.尊享去广告、PDF免积分导出、语音调速等特权\n3.VIP会员全部文章无限下载\n4.非VIP用户单词闯关体验闯1关, VIP会员无限单词闯关\n5.非VIP用户每篇文章句子评测仅限3句, VIP会员无限制评测\n6.非VIP用户口语秀配音仅限前3篇，VIP会员无限配音\n7.VIP会员无限制保存视频到手机相册\n8.更多VIP功能，敬请期待\n\nTips:全站VIP适用于iyuba.cn旗下所有应用</string>
+    <string name="vip_golder">1. 微课模块: 小学英语全部课程；初中英语全部课程；新概念英语全4册；VOA英语Lisa博士、Rachel美语发音；
+   Alex博士BBC英式发音；四六级名师陈苏灵、李尚龙、石雷鹏、尹延、章敏等；托福、雅思、
+   考研、学位英语、中职英语等名师讲解所有课程全部免费学习；
+        \n\n2. 尊享爱语吧旗下所有APP全站会员特权。
+        \n\nTips:黄金会员VIP适用于iyuba.cn旗下所有应用
+    </string>
+
+
+    <string name="app_more">更多应用</string>
+    <string name="about">关于</string>
+    <string name="coureschoose">选择课程</string>
+    <string name="about_iyuba">关于</string>
+    <string name="about_update_alert">发现应用有新版本：{0}，是否进行更新？</string>
+    <string name="about_update_running_title">更新应用</string>
+    <string name="about_update_running">正在更新，请稍后。。。</string>
+    <string name="about_error">服务器忙！请稍后下载！</string>
+    <string name="about_update_isnew">已经是最新版本</string>
+    <string name="about_version">软件版本: {0}</string>
+    <string name="about_more">更多精彩应用</string>
+    <string name="custom_service_qq">客服电话: 4008881905</string>
+    <string name="call_permission">拨打电话</string>
+    <string name="permission_fail">权限未打开，打开后即可正常使用此功能</string>
+
+    <string name="phone_num_error">手机号输入错误</string>
+    <string name="permission_deny_for_get_code">申请权限失败,无法获取验证码</string>
+    <string name="permission_deny_for_submit_code">申请权限失败,无法提交验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="input_correct_code">验证失败，请输入正确的验证码！</string>
+
+    <!-- 本地收藏界面相关字符资源 -->
+    <string name="collection_title">新闻</string>
+    <string name="collection_title_sentence">句子</string>
+    <string name="collection_sentence_button">收藏本句</string>
+    <string name="collection_collected">本句已经收藏过了</string>
+    <string name="collection_upload">上传至云端</string>
+    <string name="collection_download">从云端同步</string>
+    <string name="collection_upload_msg">上传至云端会让云端与现在本地的句子保持一致，确认上传吗？</string>
+    <string name="collection_download_msg">从云端同步会尽可能多的保留您在本地和云端的句子，确认同步吗？</string>
+    <string name="collection_success">收藏句子成功！</string>
+    <string name="collection_del">删除</string>
+    <string name="no_login">您还未登录！请登录！</string>
+    <string name="collection_please_select_art">请选择要删除的文章</string>
+
+    <!-- VIP -->
+    <string name="upgrade_vip">升级VIP</string>
+    <string name="iyubi_remain">语币余额：</string>
+    <string name="cur_user">当前用户：</string>
+    <string name="user_state">用户状态：</string>
+    <string name="deadline">有效期至：</string>
+    <string name="refresh">刷新</string>
+    <string name="vip">VIP</string>
+    <string name="lifelong_vip">终身VIP</string>
+    <string name="vip_for_all">全站VIP特权（不含微课）</string>
+    <string name="vip_function">Vip用户享受以下全部功能</string>
+    <string name="buy_iyubi">购买爱语币</string>
+    <string name="pay_success_balance">支付成功，您现在的余额是：</string>
+    <string name="lifelong_vip_already">您已经是终身VIP</string>
+    <string name="vip_explain">请购买爱语币后，再使用爱语币余额兑换下列各VIP，即可开通VIP权限：</string>
+    <string name="enjoy_gold_vip">畅享爱语吧VIP黄金套餐</string>
+    <string name="lifelong_vip_for_this">1000爱语币获取本应用永久VIP服务</string>
+    <string name="contact_service">联系客服</string>
+    <string name="common_user">普通用户</string>
+    <string name="not_vip">您还不是VIP</string>
+    <string name="vip_price_for_this_app">99.9元获取本应用永久VIP服务\n（仅限Android端本应用使用）</string>
+    <string name="vip_price_for_three_year">全站会员36个月：\t\t¥588</string>
+    <string name="vip_price_for_twelve_month">全站会员12个月：\t\t¥199</string>
+    <string name="vip_price_for_six_month">全站会员6个月：\t\t\t¥119</string>
+    <string name="vip_price_for_three_month">全站会员3个月：\t\t\t¥69</string>
+    <string name="vip_price_for_one_month">全站会员1个月：\t\t\t¥25</string>
+
+    <!-- buy iyubi -->
+    <string name="iyuba_copyright">爱语吧（京ICP备12050448号）\nCopyRight 北京爱语吧科技有限公司 2015 举报邮箱：iyuba@sina.com</string>
+    <string name="buy_immediately">立即购买</string>
+    <string name="price">{0}元</string>
+    <string name="charge">本次花费{0}元购买{1}爱语币</string>
+    <string name="buy_iyubi_description">本次购买{0}爱语币</string>
+
+    <!-- vip center -->
+    <string name="vip_center">会员中心</string>
+    <string name="iyuba_group">小学英语官方群</string>
+    <string name="iyuba_official">小学英语公众号</string>
+    <string name="vip_center_qq_contact">联系QQ客服</string>
+    <string name="vip_center_no_qq_message">请安装QQ客户端以便和客服交流</string>
+
+    <!-- promotion channel names -->
+    <string name="channel_none" translatable="false">none</string>
+    <string name="channel_360" translatable="false">360</string>
+    <string name="channel_yingyongbao" translatable="false">yingyongbao</string>
+    <string name="channel_huawei" translatable="false">huawei</string>
+    <string name="channel_baidu" translatable="false">baidu</string>
+
+    <string name="app_promotion_channel">@string/channel_none</string>
+    <string name="pay_success">支付成功</string>
+    <string name="order_commit_error">订单提交出现问题!</string>
+    <string name="order_unusual">订单异常!</string>
+    <string name="order_verify_fail">订单验证失败!</string>
+    <string name="order_pay">订单支付</string>
+    <string name="weixin_not_install">微信未安装无法使用微信支付!</string>
+
+    <!-- Me -->
+    <string name="me_title">我</string>
+    <string name="me_local_data">我的本地数据</string>
+    <string name="me_sync_data">设置和数据同步</string>
+    <string name="me_clock_data">打卡报告</string>
+    <string name="me_my_grades">我的成绩</string>
+    <string name="me_downloaded_articles">本地视频</string>
+    <string name="me_downloaded_books">我的课程资源</string>
+    <string name="me_local_collected">收藏文章</string>
+    <string name="me_watch_video">美剧大片</string>
+
+    <string name="me_draft">我的草稿箱</string>
+    <string name="me_logout">退出登录</string>
+    <string name="me_following">关注</string>
+    <string name="me_follower">粉丝</string>
+    <string name="me_credit">积分</string>
+
+    <!-- person_info -->
+    <string name="edit_person_info">编辑个人资料</string>
+    <string name="person_info_male">男</string>
+    <string name="person_info_female">女</string>
+    <string name="person_info_nickname">昵称</string>
+    <string name="person_info_gender">性别</string>
+    <string name="person_info_birth">出生日期</string>
+    <string name="person_info_success">修改成功</string>
+    <string name="person_info_fail">修改失败，请重试</string>
+    <string name="person_info_save">保存</string>
+    <string name="person_info_modify">修改</string>
+    <string name="person_info_uploadPic">上传头像</string>
+    <string name="person_info_local_now">所在地</string>
+    <string name="person_info_school">大学</string>
+    <string name="person_info_zodiac">生肖</string>
+    <string name="person_info_constellation">星座</string>
+    <string name="person_info_school_hint">请输入学校名称</string>
+    <string name="message_center">消息中心</string>
+
+    <!-- person_detail -->
+    <string name="person_detail_info">个人详细资料</string>
+    <string name="base_info">基本信息</string>
+    <string name="person_detail_nickname">昵称</string>
+    <string name="person_detail_edu">教育信息</string>
+    <string name="person_detail_college">大学</string>
+    <string name="person_detail_corp">公司</string>
+    <string name="person_detail_other">其他</string>
+    <string name="person_detail_feeling">情感状态</string>
+    <string name="person_detail_friend_aim">交友目的</string>
+    <string name="person_detail_intro">自我介绍</string>
+    <string name="person_detail_interest">兴趣爱好</string>
+    <string name="please_open_gps">请打开GPS获取位置信息！</string>
+    <string name="get_user_info_error">用户信息获取失败，请稍后再试!</string>
+
+    <string name="birth_day_format">{0}-{1}-{2}</string>
+
+    <!-- search word -->
+    <string name="search_word_title">查词</string>
+    <string name="search_word_hint">请输入查询内容</string>
+    <string name="word_title">单词</string>
+    <string name="search_word_do">搜索</string>
+    <string name="word_mean">解释:</string>
+    <string name="word_example">例句:</string>
+    <string name="word_null">请填写待查单词后再点击查询:</string>
+    <string name="no_word_example">尚无例句。正在紧张整理中…</string>
+    <string name="action_fail">操作失败，请重试！</string>
+    <string name="next_saying">换一个</string>
+
+    <!-- drawer -->
+    <string name="check_downloaded">查看下载</string>
+    <string name="software_setting">设置</string>
+    <string name="person_center">个人中心</string>
+    <string name="help_use">使用帮助</string>
+    <string name="share_content">我正在使用{0}android版，感觉不错，你也来试试吧。地址:http://app.iyuba.cn/android/androidDetail.jsp?id={1}</string>
+    <string name="app_share_content">爱语吧的这款应用{0}真的很不错啊~推荐！</string>
+    <string name="login_tip">在个人中心登录后\n享受更多学习功能~</string>
+    <string name="url_reg"><![CDATA[http://([\\w-]+\\.)+[\\w-]+(/[\\w- ./?%&=]*)?]]></string>
+
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failure">删除失败</string>
+    <string name="edit">编辑</string>
+    <string name="select_all">全选</string>
+    <string name="loading">正在加载~</string>
+    <string name="downloading">正在下载~</string>
+    <string name="iyubi">iyubi</string>
+    <string name="me">我</string>
+    <string name="user_login">用户登录</string>
+    <string name="user_register">用户注册</string>
+    <string name="user_name">当前用户名: </string>
+    <string name="user_change">修改用户名</string>
+    <string name="vip_store">会员商店</string>
+    <string name="pay_order">订单支付</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_download">我的下载</string>
+    <string name="recommend_to_friend">推荐给好友</string>
+    <string name="free_book">免费送书</string>
+    <string name="rewardVideo_ad">看激励视频赢奖励</string>
+    <string name="list">目录</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="select_nothing">您还没有选择任何内容</string>
+
+    <string name="video_loading_tip">正在下载视频{0}%</string>
+    <string name="media_loading_tip">正在下载音频{0}%</string>
+    <string name="saveAlbum_loading_tip">正在保存到相册{0}%</string>
+    <string name="i_want_dubbing">我要配音</string>
+    <string name="reply">回复</string>
+    <string name="comment_num">评论({0})</string>
+    <string name="has_no_comment">此配音还没有\n评论，快来抢\n占沙发吧~</string>
+    <string name="on_loading">正在加载...</string>
+    <string name="has_no_dubbing">此视频还没有配音，快来抢占沙发把~</string>
+    <string name="merging">正在合成配音~</string>
+    <string name="record_error">配音出现异常</string>
+
+    <string name="feedback_format">{0}\n来自英语</string>
+
+    <string name="has_no_dubbing1">您还没有配音，\n赶紧去配音和\n好友PK吧~</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_deleted">数据被删除，请回首页刷新</string>
+    <string name="coming_soon">敬请期待~</string>
+    <string name="my_dubbing">我的配音</string>
+    <string name="my_words">我的单词</string>
+    <string name="my_summary">学习报告</string>
+    <string name="study_report">展示原文及评测学习报告</string>
+    <string name="draft_progress">进度：{0}/{1}</string>
+
+    <string name="voa_image_url">http://staticvip."+com.iyuba.talkshow.Constant.Web.WEB_SUFFIX+"images/voa/{0}.jpg</string>
+    <string name="released_success">恭喜您发布成功~</string>
+    <string name="released_success2">恭喜您发布成功~\n积分 +5</string>
+    <string name="released_failure">发布失败~</string>
+    <string name="video_share_content">\&#064;爱语吧 {0} "{1}".{2}</string>
+    <string name="back_and_modify">返回并修改</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failure">保存成功</string>
+    <string name="one_more_exit">再一次退出</string>
+    <string name="dubbing_merge_failure">配音合成失败~</string>
+    <string name="audio_convert_failure">音频格式转换失败~</string>
+    <string name="convert_success">成功</string>
+    <string name="continue_loading">继续加载</string>
+    <string name="cancel_loading">取消加载</string>
+    <string name="releasing">正在发布配音~</string>
+    <string name="record_publishing">正在发布配音，请耐心等待\n成功后积分 +5</string>
+    <string name="record_publish_success">配音发布成功\n积分 +5</string>
+
+    <string name="please_check_net">请检查网络~</string>
+    <string name="database_error">数据库错误~</string>
+    <string name="birthday_after_cur">出生日期不能大于当前时间</string>
+    <string name="edit_success">修改成功</string>
+    <string name="edit_failure">修改失败</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="no_data">暂无更多～</string>
+    <string name="home_data_hint">当前没有网络数据哦\n请下拉重新加载数据～</string>
+
+    <string name="about_market_error">您当前未安装应用市场，无法使用该功能。</string>
+    <string name="update_study_record_error">学习记录上传失败</string>
+    <string name="integral_store">积分商城</string>
+    <string name="progress_xx">\??</string>
+    <string name="play_ins_new_word_success">添加生词成功</string>
+    <string name="sendbookmessage">现在给应用好评可以获得由爱语吧名师团队编写的电子书哦,先到先得~~</string>
+    <string name="pay_result_tip" />
+
+    <string name="me_news">看视频</string>
+    <string name="me_moc">微课</string>
+    <string name="me_video_collect">收藏视频</string>
+    <string name="speech_circle">口语圈</string>
+
+    <string name="wxSmallLoginFail">微信一键登录失败，请重试或更换其他方式</string>
+
+    <integer name="headline_child">23</integer>
+    <integer name="headline_primary">24</integer>
+    <integer name="headline_junior">25</integer>
+
+    <!--奖励接口显示的样式-->
+    <string name="reward_show">本次学习获得%1$s元红包奖励,已自动存入您的钱包账户</string>
+</resources>

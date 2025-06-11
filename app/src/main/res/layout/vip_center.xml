@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <!--用户信息-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_mask"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <!--返回按钮-->
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"/>
+
+            <!--qq客服-->
+            <ImageButton
+                android:id="@+id/btn_serve"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/serverqq" />
+
+            <!--购买爱语币-->
+            <TextView
+                android:id="@+id/btn_buyiyuba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_serve"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:padding="5dp"
+                android:text="购买爱语币"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <!--购买记录-->
+            <TextView
+                android:id="@+id/btn_payMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_buyiyuba"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:padding="5dp"
+                android:text="购买记录"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/noavatar_small" />
+
+            <!--用户名称-->
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="肖肖的小号" />
+
+            <!--会员时间-->
+            <TextView
+                android:id="@+id/expire_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/vip_bg"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                tools:text="2019-08-22" />
+
+            <!--爱语币和钱包-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shopMsg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expire_time"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_iyubi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/tv_wallet"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="爱语币：110" />
+
+                <TextView
+                    android:id="@+id/tv_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toRightOf="@id/tv_iyubi"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="钱包：10元" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱语吧VIP权限说明"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="点击查看详细介绍"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+    <!--会员价格信息-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_vip_benyingyong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/forever_vip"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="本应用VIP"
+                    />
+                <TextView
+                    android:id="@+id/tv_vip_quanzhan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/all_vip"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="全站VIP" />
+                <TextView
+                    android:id="@+id/tv_vip_huangjin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/gold_vip"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="黄金会员" />
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/quanzhan_ll"
+                layout="@layout/vipview_quanzhan" />
+
+            <include
+                android:id="@+id/benyingyong_ll"
+                layout="@layout/vip_benyingyong" />
+            <include
+                android:id="@+id/vipgold_ll"
+                android:visibility="visible"
+                layout="@layout/vip_gold" />
+
+            <Button
+                android:id="@+id/go_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/go_buy"
+                android:text="立即开通"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_freeAllVip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:text="@string/vip_gongzhonghao" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

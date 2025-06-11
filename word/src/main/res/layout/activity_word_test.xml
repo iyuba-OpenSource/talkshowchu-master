@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:navigationIcon="?android:attr/homeAsUpIndicator"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:titleTextAppearance="@style/ToolbarTitle">
+
+        <TextView
+            android:id="@+id/text_tiny_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/word_pass_test"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/load_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:scaleType="center"
+            android:scrollHorizontally="true"
+            android:text="继续答题"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--闯关界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    tools:text="English" />
+
+                <TextView
+                    android:id="@+id/answera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/wordtest_rect_default1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    tools:text="选项A" />
+
+                <TextView
+                    android:id="@+id/answerb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/wordtest_rect_default1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    tools:text="选项B" />
+
+                <TextView
+                    android:id="@+id/answerc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/wordtest_rect_default1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    tools:text="选项C" />
+
+                <TextView
+                    android:id="@+id/answerd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/wordtest_rect_default1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    tools:text="选项D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:id="@+id/jiexi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="32dp"
+                        android:background="@drawable/text_selector"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="10dp"
+                        android:text="查看解析"
+                        android:textColor="@drawable/textcolor"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/next_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:background="@drawable/text_selector"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/word_pass_next"
+                        android:textColor="@drawable/textcolor"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <RelativeLayout
+            android:id="@+id/jiexi_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white_back_bg"
+            android:minHeight="200dp"
+            android:padding="20dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/jiexi_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/explain_close" />
+
+            <TextView
+                android:id="@+id/explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiexi_close"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_btn_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="解释"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/jiexi_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/explain"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:textColor="@color/commont_txt"
+                android:textSize="18sp"
+                tools:text="English" />
+
+            <TextView
+                android:id="@+id/jiexi_pron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiexi_word"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/commont_txt"
+
+                android:textSize="14sp"
+                tools:text="English" />
+
+            <TextView
+                android:id="@+id/jiexi_def"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jiexi_pron"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+
+                android:textColor="@color/commont_txt"
+                android:textSize="16sp"
+                tools:text="English" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:button="@drawable/selector_collect" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--闯关结果-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次闯关记录"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+
+            app:layout_constraintVertical_bias=".2"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/rightCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="正确数量：10"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/resultTitle"
+            />
+
+        <TextView
+            android:id="@+id/wrongCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="错误数量：10"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rightCount"
+            />
+
+        <TextView
+            android:id="@+id/wrongRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="错误率：10"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wrongCount"
+            />
+
+        <TextView
+            android:id="@+id/retryTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_round_theme_10"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+
+            android:paddingEnd="20dp"
+            android:paddingBottom="8dp"
+            android:text="重置闯关数据"
+            android:textColor="@color/white"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wrongRate"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

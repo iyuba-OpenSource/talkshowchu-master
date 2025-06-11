@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE">
+
+    <include
+        android:id="@+id/register_toolbar"
+        layout="@layout/partial_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/register_toolbar">
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_old"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/logo_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_bkg">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/phone_icon"/>
+
+            <EditText
+                android:id="@+id/register_phone_num_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="@string/register_input_phone"
+                android:imeActionId="0"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/register_code_edt"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_text_bkg"
+                android:ems="10"
+                android:hint="@string/register_input_code"
+                android:imeActionId="0"
+                android:imeOptions="actionNext"
+                android:inputType="text|number"
+                android:maxLength="6"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/register_get_code_btn"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_green_button"
+                android:minHeight="30dp"
+                android:text="@string/register_get_code"
+                android:textColor="@color/WHITE"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/shape_green_button"
+            android:text="@string/register_next"
+            android:textColor="@color/WHITE"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+                <CheckBox
+                    android:id="@+id/cb_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/register_by_email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:minHeight="30dp"
+                android:text="@string/register_by_email"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

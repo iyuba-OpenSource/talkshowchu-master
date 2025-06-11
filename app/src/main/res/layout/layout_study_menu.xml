@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/share"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_study_share"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:text="分享原文"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_study_pdf"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="导出PDF"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_study_collect_no"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="文章收藏"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/study_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/report"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_study_report_ok"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="学习报告"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--区间播放-->
+    <LinearLayout
+        android:id="@+id/ab"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_study_ab_play"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="区间播放"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--文本滚动-->
+    <LinearLayout
+        android:id="@+id/textSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/textSync_image"
+            android:src="@drawable/ic_study_sync_ok"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="文本跟随"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--下载-->
+    <LinearLayout
+        android:id="@+id/download"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/detail_download"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="下载内容"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--更新原文-->
+    <LinearLayout
+        android:id="@+id/update"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/detail_refresh"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="更新原文"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--保存视频到相册-->
+    <LinearLayout
+        android:id="@+id/download_video"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_save_video"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="保存视频到相册"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--排行榜-->
+    <LinearLayout
+        android:id="@+id/dubbing_rank"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_dubbing_rank"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="配音排行"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--专辑-->
+    <LinearLayout
+        android:id="@+id/dubbing_album"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_dubbing_album"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="相关专辑"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--阅读语言切换-->
+    <LinearLayout
+        android:id="@+id/read_language"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/read_language_img"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_language_chinese"
+            android:layout_marginLeft="4dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/read_language_text"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="切换双语"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

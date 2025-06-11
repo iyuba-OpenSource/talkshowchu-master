@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quanzhan_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <com.iyuba.talkshow.ui.widget.MyGridView-->
+<!--            android:id="@+id/gridview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:horizontalSpacing="0.0dp"-->
+<!--            android:listSelector="@null"-->
+<!--            android:numColumns="3"-->
+<!--            android:smoothScrollbar="true"-->
+<!--            android:stretchMode="columnWidth"-->
+<!--            android:verticalSpacing="0.0px"-->
+<!--            tools:layout_height="69dp" />-->
+        <TextView
+            android:id="@+id/des_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:lineSpacingMultiplier="1"
+            android:padding="4dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#FF75769C"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_quanzhan1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/price_quanzhan1"
+            style="@style/priceStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥50" />
+
+        <CheckBox
+            android:id="@+id/cb_quanzhan1"
+            style="@style/goldCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:text="全站会员1个月" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_quanzhan3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/price_quanzhan3"
+            style="@style/priceStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥198" />
+
+        <CheckBox
+            android:id="@+id/cb_quanzhan3"
+            style="@style/goldCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:text="全站会员6个月" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_quanzhan4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/price_quanzhan4"
+            style="@style/priceStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥298" />
+
+        <CheckBox
+            android:id="@+id/cb_quanzhan4"
+            style="@style/goldCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:text="全站会员12个月" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_quanzhan5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/price_quanzhan5"
+            style="@style/priceStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥588" />
+
+        <CheckBox
+            android:id="@+id/cb_quanzhan5"
+            style="@style/goldCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:text="全站会员36个月" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+</LinearLayout>

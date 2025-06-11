@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:paddingBottom="6dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp">
+
+    <ImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:id="@+id/download_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/thumb_layout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_downloaded_video" />
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_download"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="下载作品"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thumb_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp">
+
+        <ImageView
+            android:id="@+id/thumb_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumb_gray" />
+
+        <TextView
+            android:id="@+id/thumb_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thumb_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            tools:text="111" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/photo_iv"
+        android:layout_alignTop="@id/photo_iv"
+        android:layout_marginLeft="14dp"
+        android:layout_toLeftOf="@id/download_layout"
+        android:layout_toRightOf="@id/photo_iv">
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BLACK"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/user_name_tv"
+            android:gravity="bottom"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/play_times_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/date_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/date_tv"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>

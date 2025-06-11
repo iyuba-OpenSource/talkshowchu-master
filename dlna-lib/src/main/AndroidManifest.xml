@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cybergarage.android" >
+    <application>
+    <activity
+        android:name="devsearch.DevSearchActivity"
+        android:theme="@style/AppTheme.Main"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="portrait" />
+
+        <activity
+        android:name="devcontrol.DevControlActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
+    </application>
+</manifest>

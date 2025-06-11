@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ToolbarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="?android:attr/homeAsUpIndicator">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="@string/word_pass_test"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/words_all"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:src="@drawable/word_list_icon"-->
+<!--            android:ellipsize="marquee"-->
+<!--            android:scrollHorizontally="true"-->
+<!--            android:scaleType="center"-->
+<!--            android:singleLine="true"-->
+<!--            android:text="重点词汇"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="16sp" />-->
+        <ImageView
+            android:id="@+id/select_book"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:ellipsize="marquee"
+            android:tint="@color/white"
+            android:src="@drawable/ic_course"
+            android:scrollHorizontally="true"
+            android:scaleType="center" />
+        <ImageView
+            android:id="@+id/refresh_word"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:scrollHorizontally="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:text="换课本"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+<!--        <ImageView-->
+<!--            android:id="@+id/set"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:scaleType="center"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:src="@drawable/word_setting_icon"-->
+<!--            android:layout_gravity="right">-->
+<!--        </ImageView>-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/all_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.iyuba.wordtest.widget.MyGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0.0dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0px" />
+    </ScrollView>
+</LinearLayout>

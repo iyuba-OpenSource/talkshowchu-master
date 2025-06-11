@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.devbrackets.android.exomedia.ui.widget.VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/BLACK"
+        />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/video_view"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dubbing_success"
+                android:textColor="@color/GREEN"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="准确度"
+                    android:textSize="12sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_accuracy"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_accuracy"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/progress_xx"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完整度"
+                    android:textSize="12sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_completeness"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_completeness"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/progress_xx"
+                    android:textSize="12sp"
+                    tools:text="9999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流畅度"
+                    android:textSize="12sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_fluence"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_fluence"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/progress_xx"
+                    android:textSize="12sp"
+                    tools:text="9999" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_publish_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="72dp"
+            android:background="@drawable/green_corner"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:paddingTop="6dp"
+            android:paddingRight="45dp"
+            android:paddingBottom="6dp"
+            android:text="@string/publish_and_share"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_share_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="72dp"
+            android:background="@drawable/green_corner"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:paddingTop="6dp"
+            android:paddingRight="45dp"
+            android:paddingBottom="6dp"
+            android:text="@string/share_to_friends"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_save_draft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="72dp"
+            android:background="@drawable/green_corner"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:paddingTop="6dp"
+            android:paddingRight="45dp"
+            android:paddingBottom="6dp"
+            android:text="@string/save_draft"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_back_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="56dp"
+            android:text="@string/back_to_home_page"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/back_and_modify"
+        android:textColor="@color/WHITE"
+        android:textSize="16sp" />
+</RelativeLayout>

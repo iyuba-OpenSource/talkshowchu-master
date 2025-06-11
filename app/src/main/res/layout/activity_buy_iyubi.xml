@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title_and_back"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/lib_button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/login_img_back" />
+
+        <!--android:shadowColor="#ff000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"-->
+        <TextView
+            android:id="@+id/web_buyiyubi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购买爱语币"
+            android:shadowRadius="3.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progress_indictor"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="(仅用于购买微课,购买的微课可永久学习)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/iyubi1" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@id/iv_image"
+                    android:text="¥19.9"
+                    android:textColor="#ff0000"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_buy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tv_money"
+                    android:background="@mipmap/buyiyubi" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#33000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_image2"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/iyubi2" />
+
+                <TextView
+                    android:id="@+id/tv_money2"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@id/iv_image2"
+                    android:text="¥59.9"
+                    android:textColor="#ff0000"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_buy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tv_money2"
+                    android:background="@mipmap/buyiyubi" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#33000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_image3"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/iyubi3" />
+
+                <TextView
+                    android:id="@+id/tv_money3"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@id/iv_image3"
+                    android:text="¥99.9"
+                    android:textColor="#ff0000"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_buy3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tv_money3"
+                    android:background="@mipmap/buyiyubi" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#33000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_image4"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/iyubi4" />
+
+                <TextView
+                    android:id="@+id/tv_money4"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@id/iv_image4"
+                    android:text="¥599"
+                    android:textColor="#ff0000"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_buy4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tv_money4"
+                    android:background="@mipmap/buyiyubi" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#33000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_image5"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/iyubi5" />
+
+                <TextView
+                    android:id="@+id/tv_money5"
+                    android:layout_width="80sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@id/iv_image5"
+                    android:text="¥999"
+                    android:textColor="#ff0000"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_buy5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tv_money5"
+                    android:background="@mipmap/buyiyubi" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#33000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

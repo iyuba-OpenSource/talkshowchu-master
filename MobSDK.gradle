@@ -1,0 +1,60 @@
+//com.iyuba.talkshow.junior（初中英语）
+
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    // 初中英语
+
+    //北京爱语吧--旧版本
+//    appKey "328d6f4bfbc8c"
+//    appSecret "20c99d72a7a53ade3558792cce26680d"
+
+    //山东爱语吧
+    appKey "38865643d556b"
+    appSecret "6b373d5b5d2c6d941f83b5b28ec98421"
+
+    SecVerify {
+//        version '3.0.7'
+    }
+    ShareSDK {
+        loopShare true
+        devInfo {
+            Wechat {
+                sortId 1
+                appId "wxb104da7986bda128"
+                appSecret "7859d78196c14dd526e1806cf2ffe02a"//7725c72418d5b046a6ce0b377c60a387
+                userName "gh_f6acd8765d6b"
+                path "/pages/index/index"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                sortId 2
+                appId "1107952186"
+                appKey "RiVk3nmTTr559jtG"
+            }
+            SinaWeibo {
+                sortId 6
+                appKey "2122951410"
+                appSecret "1da732328ff08bc9f4491d847d761e4f"
+                callbackUri "http://www.sharesdk.cn"
+            }
+            WechatMoments {
+                sortId 3
+                appId "wxb104da7986bda128"
+                appSecret "7859d78196c14dd526e1806cf2ffe02a"//7725c72418d5b046a6ce0b377c60a387
+            }
+            WechatFavorite {
+                sortId 4
+                appId "wxb104da7986bda128"
+                appSecret "7859d78196c14dd526e1806cf2ffe02a"//7725c72418d5b046a6ce0b377c60a387
+            }
+            QZone {
+                sortId 5
+                appId "1107952186"
+                appKey "RiVk3nmTTr559jtG"
+            }
+        }
+    }
+    SMSSDK {}
+}

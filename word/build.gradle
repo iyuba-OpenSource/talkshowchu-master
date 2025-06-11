@@ -1,0 +1,101 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+
+
+//apply from: '../MobSDK.gradle'//大版本
+apply from: '../MobJunior.gradle'//小版本
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            abiFilters "armeabi-v7a", 'arm64-v8a'
+//            abiFilters "armeabi-v7a" //oppo, 'arm64-v8a'
+        }
+    }
+
+    buildFeatures{
+        viewBinding= true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs '../app/libs'
+        }
+    }
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttpVersion"
+    compileOnly "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
+//    compileOnly "com.google.code.gson:gson:2.8.6"
+    api('com.jaeger.statusbarutil:library:1.5.1') {
+        exclude group: 'com.android.support'
+    }
+
+    implementation "org.permissionsdispatcher:permissionsdispatcher:$rootProject.ext.permissionDispatcherVersion"
+    annotationProcessor "org.permissionsdispatcher:permissionsdispatcher-processor:$rootProject.ext.permissionDispatcherVersion"
+
+    compileOnly 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.ext.retrofitVersion"
+    implementation("com.squareup.retrofit2:converter-simplexml:$rootProject.ext.retrofitVersion") {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    compileOnly 'de.hdodenhof:circleimageview:2.2.0'
+    compileOnly 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'androidx.room:room-runtime:2.4.0'
+    annotationProcessor 'androidx.room:room-compiler:2.4.0'
+
+    implementation(name: 'mvp-1.0.0', ext: 'aar')
+    implementation(name: 'toolbox-1.1.0', ext: 'aar')
+    implementation(name: 'commonvar-1.0.0', ext: 'aar')
+    implementation "me.jessyan:retrofit-url-manager:1.4.0"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
+//    compileOnly "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxJavaVersion"
+    api(name: "ijkplayer-arm64-0.8.8-modify", ext: "aar")
+    api(name: "ijkplayer-armv7a-0.8.8-modify", ext: "aar")
+    api(name: "ijkplayer-java-0.8.8-modify", ext: "aar")
+    api(name: "ijkplayer-x86-0.8.8-modify", ext: "aar")
+    api(name: "ijkplayer-x86_64-0.8.8-modify", ext: "aar")
+//    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //exomedia
+    implementation(name: 'exomedia-4.3.0-modify-exo2.19.1',ext: 'aar')
+    implementation "com.google.android.exoplayer:exoplayer:2.19.1"
+    //oaid模块
+//    implementation(name: 'oaid_sdk_2.0.0',ext: 'aar')
+
+    //xxpermission权限申请
+    api 'com.github.getActivity:XXPermissions:13.6'
+
+    //谷歌的手写识别功能(用于单词的听写功能)
+    api 'com.google.mlkit:digital-ink-recognition:18.1.0'
+}
+

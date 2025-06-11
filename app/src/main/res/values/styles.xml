@@ -1,0 +1,213 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppsTheme.NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/divider_line</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Main" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--<style name="AppsTheme.NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:listDivider">@drawable/divider_line</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+    <!--</style>-->
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:colorBackground">@color/LIGHT_GRAY</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogItem">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/GRAY</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="VoaText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="TypeSelect">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="singleLine">true</item>
+        <item name="android:background">@drawable/green_corner</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="TypeSelectSub" parent="TypeSelect">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <style name="ClassSelectSub" parent="TypeSelect">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <style name="FiveRatingBar" parent="@android:style/Widget.RatingBar">
+               
+        <item name="android:progressDrawable">@drawable/five_rating_bar</item>
+               
+        <item name="android:minHeight">20dp</item>
+               
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <style name="DetailTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="PayMethodCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/pay_method_checkbox</item>
+        <item name="android:padding">5.0dp</item>
+        <item name="android:maxHeight">10.0dp</item>
+    </style>
+
+    <style name="DubbingText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/BLACK</item>
+    </style>
+
+    <style name="DubbingIndex">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/WHITE</item>
+    </style>
+
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal
+        </item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:maxHeight">15dip</item>
+    </style>
+
+    <style name="SeekBar_Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">6.0dip</item>
+        <item name="android:minHeight">6.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:thumb">@drawable/seek_thumb_</item>
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+
+    <style name="MyDubbingItem_Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:shadowColor">#FFdcdcdc</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+    </style>
+
+    <style name="MyDubbingItem_normal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/GRAY</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+
+    <style name="NoTranslucent">
+        <item name="android:windowIsTranslucent"> false </item>
+    </style>
+
+    <style name="goldCheckBoxStyle">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:button">@drawable/check_style</item>
+    </style>
+
+    <style name="priceStyle">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:button">@drawable/check_style</item>
+        <item name="android:textColor">#FFE69F2D</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <!--<item name="android:background">@color/navpage</item>-->
+    </style>
+    
+    <style name="VideoProgressLoading">
+        <item name="android:progressDrawable">@drawable/video_progress_loading</item>
+    </style>
+
+</resources>

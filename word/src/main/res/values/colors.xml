@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e7d32</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="green">#50B554</color>
+    <color name="white">#E2E8E2</color>
+    <color name="red">#F44336</color>
+    <color name="black">#000000</color>
+    <color name="smssdk_black">#000000</color>
+    <color name="app_color">#1ba0e1</color>
+    <color name="commont_txt">#999999</color>
+    <color name="bg_gray_color">#efeff4</color>
+    <color name="color_gray">#333333</color>
+
+    <color name="divider_line">#e2e2e2</color>
+
+    <!--新界面的颜色-->
+    <color name="background_color">#ffffff</color>
+</resources>

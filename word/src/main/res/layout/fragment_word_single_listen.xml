@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--听写界面-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listenView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listenLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/shape_round_white_10"
+
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintVertical_bias=".1"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <ImageView
+                android:id="@+id/audio"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_wordtest_audio_big"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请根据音频内容，填写正确的单词"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/audio"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/audio"
+                />
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tips"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_round_gray_10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:minHeight="50dp"
+                android:maxLength="30"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tips"
+                />
+            <LinearLayout
+                android:id="@+id/showLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:visibility="invisible"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="正确答案："/>
+                <TextView
+                    android:id="@+id/word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="ruler"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color_gray"
+                android:textSize="16sp"
+                android:text="1/10"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/showLayout"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/again"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/spell_again"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_round_white_10"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/next"
+            app:layout_constraintTop_toBottomOf="@id/listenLayout"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/spell_next"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_round_white_10"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+
+            app:layout_constraintLeft_toRightOf="@id/again"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listenLayout"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--展示界面-->
+    <include
+        android:id="@+id/scoreLayout"
+        layout="@layout/layout_word_result"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

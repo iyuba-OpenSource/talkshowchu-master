@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="sec_verify_demo_common_10">10dp</dimen>
+    <dimen name="sec_verify_demo_common_100">100dp</dimen>
+    <dimen name="sec_verify_demo_common_80">80dp</dimen>
+    <dimen name="sec_verify_demo_text_size_xs">12sp</dimen>
+    <dimen name="sec_verify_demo_text_size_s">16sp</dimen>
+    <dimen name="sec_verify_demo_text_size_m">20sp</dimen>
+    <dimen name="sec_verify_demo_common_50">50dp</dimen>
+    <dimen name="comment_image_size">36dp</dimen>
+    <dimen name="me_top_size">116dp</dimen>
+
+    <!-- adjust the status bar -->
+    <dimen name="tool_bar_bottom_shadow">2dp</dimen>
+
+    <dimen name="common_image_size">65dp</dimen>
+
+    <dimen name="collect_image_size">16dp</dimen>
+    <dimen name="share_image_size">14dp</dimen>
+    <dimen name="difficulty_image_size">16dp</dimen>
+    <dimen name="comment_share_image_size">18dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="status_bar_height">0dp</dimen>
+</resources>

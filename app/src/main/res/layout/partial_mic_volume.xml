@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/voice_bkg"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/image_mic_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/voice_rcd_hint"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/image_mic_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_mic_icon"
+        android:background="@drawable/amp1"/>
+
+    <TextView
+        android:id="@+id/text_mic_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_mic_icon"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="请讲话"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>

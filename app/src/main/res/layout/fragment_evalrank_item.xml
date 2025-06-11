@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/rank_logo_image"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/rank_gold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/rank_logo_text"
+            android:layout_width="28dp"
+            android:maxWidth="32dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:background="@drawable/bg_sign_today"
+            android:text="4"
+            android:textColor="#FF4F14"
+            android:layout_alignTop="@+id/user_image"
+            android:layout_alignStart="@+id/rank_logo_image" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rank_logo_image"
+            android:src="@mipmap/rank_blue" />
+
+        <TextView
+            android:id="@+id/user_image_text"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rank_logo_image"
+            android:gravity="center"
+            android:background="@mipmap/rank_blue"
+            android:text="C"
+            android:textColor="@color/whitesmoke"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rank_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_image"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="sllbsjj"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/rank_user_info"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="累计阅读5555555个单词\n累计阅读35493篇文章\nWPM值:152"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+</LinearLayout>

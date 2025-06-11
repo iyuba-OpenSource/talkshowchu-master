@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/vipgold_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/gold_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff9f8f8"
+        android:lineSpacingMultiplier="1.4"
+        android:paddingLeft="8dp"
+        android:paddingTop="20dp"
+        android:paddingRight="8dp"
+        android:text="@string/vip_golder"
+        android:textColor="#FF75769C"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff9f8f8" />
+
+    <RelativeLayout
+        android:id="@+id/gold_app_re_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <CheckBox
+            android:id="@+id/gold_app_cb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            style="@style/goldCheckBoxStyle" />
+
+        <TextView
+            android:id="@+id/gold_app_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/gold_app_cb_1"
+            android:text="黄金会员1个月"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/gold_app_tvr_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="¥ 98"
+            android:textColor="#E69F2D"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gold_app_re_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <CheckBox
+            android:id="@+id/gold_app_cb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            style="@style/goldCheckBoxStyle" />
+
+        <TextView
+            android:id="@+id/gold_app_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/gold_app_cb_2"
+            android:text="黄金会员3个月"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/gold_app_tvr_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="¥ 288"
+            android:textColor="#E69F2D"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gold_app_re_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <CheckBox
+            android:id="@+id/gold_app_cb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            style="@style/goldCheckBoxStyle" />
+
+        <TextView
+            android:id="@+id/gold_app_tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/gold_app_cb_3"
+            android:text="黄金会员6个月"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/gold_app_tvr_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="¥ 518"
+            android:textColor="#E69F2D"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gold_app_re_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/gold_app_cb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            style="@style/goldCheckBoxStyle" />
+
+        <TextView
+            android:id="@+id/gold_app_tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/gold_app_cb_4"
+            android:text="黄金会员12个月"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/gold_app_tvr_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="¥ 998"
+            android:textColor="#E69F2D"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+</LinearLayout>

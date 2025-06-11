@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@mipmap/ic_tab_home"
+        title="@string/main_home_title" />
+
+    <tab
+        id="@+id/tab_word"
+        icon="@mipmap/ic_main_word"
+        title="@string/main_tab_word" />
+
+    <tab
+        id="@+id/tab_moc"
+        icon="@mipmap/ic_tab_moc"
+        title="@string/main_moc_title" />
+
+    <tab
+        id="@+id/tab_talk"
+        icon="@mipmap/ic_tab_talk"
+        title="@string/main_lesson_title" />
+
+    <tab
+        id="@+id/tab_me"
+        icon="@mipmap/ic_tab_me"
+        title="@string/main_me_title" />
+
+</tabs>

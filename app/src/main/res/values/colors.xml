@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e7d32</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="colorAccent">#60ad5e</color>
+    <color name="sec_verify_demo_main_color">#00B6B5</color>
+    <color name="sec_verify_demo_text_color_blue">#4E96FF</color>
+    <color name="sec_verify_demo_text_color_common_gray">#999999</color>
+    <color name="sec_verify_demo_text_color_common_white">#EEEEEE</color>
+
+    <color name="colorText">#3F51B5</color>
+    <color name="light_black">#222</color>
+    <color name="dark_gray">#7e7b7b</color>
+    <color name="color_green">#5BC555</color>
+    <color name="color_yellow">#FFBF4A</color>
+    <color name="color_word_back">#F9F9F9</color>
+
+    <color name="theme_color">#239bf0</color>
+    <color name="status_bar_video">#000</color>
+    <color name="green_light">#93c942</color>
+    <color name="green_light1">#4caf50</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="GREEN">#25811E</color>
+    <color name="GRAY">#ACACAC</color>
+    <color name="LIGHT_GRAY">#F2F2F2</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="BLACK">#000000</color>
+    <color name="SKY_BLUE">#87ceeb</color>
+    <color name="LIGHT_RED">#fd8b77</color>
+    <color name="RED">#ff0000</color>
+    <color name="divider_line">#e2e2e2</color>
+    <color name="bottom_text_color">#cdcdcd</color>
+    <color name="new_gray">#e6e6e6</color>
+    <!-- 天蓝色 -->
+
+    <!--评测的进度圆圈颜色-->
+    <color name="eval_progress_color">#1F7A37</color>
+    <!--课程-原文的习题颜色-->
+    <color name="exercise_normal">#808080</color>
+    <color name="exercise_right">#3FB541</color>
+    <color name="exercise_error">#ff0000</color>
+    <!--选词控件-->
+    <color name="textColorVice">#6C6C6C</color>
+</resources>

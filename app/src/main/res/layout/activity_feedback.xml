@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/feedback_toolbar"
+        layout="@layout/partial_toolbar"/>
+
+    <TextView
+        android:id="@+id/feedback_suggestion_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/feedback_info_title"
+        android:textColor="@color/BLACK"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/feedback_suggestion_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/feedback_suggestion_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_feed"
+        android:hint="@string/feedback_info"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"
+        android:gravity="top"
+        android:textSize="14sp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/feedback_contact_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_suggestion_edittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/feedback_contact_title"
+        android:textColor="@color/BLACK"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/feedback_contact_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_contact_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_feed"
+        android:hint="@string/feedback_contact"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp">
+    </EditText>
+
+    <Button
+        android:id="@+id/feedback_submit_btn"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/feedback_contact_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape_green_button"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/logo_small"/>
+
+<!--    app:lottie_rawRes="@raw/tap_card"-->
+<!---->
+</RelativeLayout>

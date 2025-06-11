@@ -1,0 +1,161 @@
+package com.iyuba.talkshow.lil.help_fix.data.library;
+
+/**
+ * @desction: 字符库
+ * @date: 2023/4/10 18:38
+ * @author: liang_mu
+ * @email: liang.mu.cn@gmail.com
+ */
+public class StrLibrary {
+
+    public static final String userId = "userId";
+    public static final String userid = "userid";
+    public static final String uid = "uid";
+    public static final String name = "name";
+    public static final String vip = "vip";
+    public static final String version = "version";
+    public static final String type = "type";
+    public static final String format = "format";
+    public static final String category = "category";
+    public static final String bookId = "bookId";
+    public static final String bookid = "bookid";
+    public static final String bookName = "bookName";
+    public static final String bookname = "bookname";
+    public static final String sign = "sign";
+    public static final String protocol = "protocol";
+    public static final String app = "app";
+    public static final String platform = "platform";
+    public static final String ad_space = "ad_space";
+    public static final String timeStr = "timeStr";
+    public static final String content = "content";
+    public static final String email = "email";
+    public static final String userPic = "userPic";
+    public static final String username = "username";
+    public static final String password = "password";
+    public static final String x = "x";
+    public static final String y = "y";
+    public static final String data = "nccSimple2023";
+    public static final String words = "words";
+    public static final String pageIndex = "pageIndex";
+    public static final String pageName = "pageName";
+    public static final String pageTag = "pageTag";
+    public static final String count = "count";
+    public static final String mobile = "mobile";
+    public static final String phone = "phone";
+    public static final String appId = "appId";
+    public static final String appName = "appName";
+    public static final String appVersion = "appVersion";
+    public static final String appid = "appid";
+    public static final String json = "json";
+    public static final String xml = "xml";
+    public static final String title = "title";
+    public static final String play = "play";
+    public static final String url = "url";
+    public static final String series = "series";
+    public static final String seriesid = "seriesid";
+    public static final String word = "word";
+    public static final String course = "course";
+    public static final String video = "video";
+    public static final String talk = "talk";
+    public static final String me = "me";
+    public static final String Lesson = "Lesson";
+    public static final String LessonId = "LessonId";
+    public static final String lessonId = "lessonId";
+    public static final String tag = "tag";
+    public static final String language = "language";
+    public static final String book = "book";
+    public static final String flg = "flg";
+    public static final String flag = "flag";
+    public static final String position = "position";
+    public static final String voaid = "voaid";
+    public static final String voaId = "voaId";
+    public static final String isenglish = "isenglish";
+    public static final String sentenceId = "sentenceId";
+    public static final String lessonIndex = "lessonIndex";
+    public static final String topic = "topic";
+    public static final String topicid = "topicid";
+    public static final String topicId = "topicId";
+    public static final String start = "start";
+    public static final String total = "total";
+    public static final String bookNum = "bookNum";
+    public static final String token = "token";
+    public static final String id = "id";
+    public static final String myid = "myid";
+    public static final String newsId = "newsId";
+    public static final String sentence = "sentence";
+    public static final String wordId = "wordId";
+    public static final String paraId = "paraId";
+    public static final String paraid = "paraid";
+    public static final String IdIndex = "IdIndex";
+    public static final String idIndex = "idIndex";
+    public static final String idindex = "idindex";
+    public static final String file = "file";
+    public static final String audios = "audios";
+    public static final String score = "score";
+    public static final String Score = "Score";
+    public static final String shuoshuotype = "shuoshuotype";
+    public static final String shuoshuoType = "shuoshuoType";
+    public static final String userphone = "userphone";
+    public static final String timestamp = "timestamp";
+    public static final String size = "size";
+    public static final String price = "price";
+    public static final String q = "q";
+    public static final String mod = "mod";
+    public static final String groupName = "groupName";
+    public static final String sentenceFlg = "sentenceFlg";
+    public static final String u = "u";
+    public static final String pageNumber = "pageNumber";
+    public static final String pageCounts = "pageCounts";
+    public static final String types = "types";
+    public static final String showType = "showType";
+    public static final String level = "level";
+    public static final String from = "from";
+    public static final String orderNumber = "orderNumber";
+    public static final String chapterOrder = "chapterOrder";
+    public static final String wxkey = "wxkey";
+    public static final String weixinApp = "weixinApp";
+    public static final String money = "money";
+    public static final String productid = "productid";
+    public static final String body = "body";
+    public static final String srid = "srid";
+    public static final String selectType = "selectType";
+    public static final String sort = "sort";
+    public static final String pages = "pages";
+    public static final String pageCount = "pageCount";
+    public static final String rewardVersion = "rewardVersion";
+    public static final String playStatus = "playStatus";
+
+    public static final String app_id = "app_id";
+    public static final String code = "code";
+    public static final String WIDtotal_fee = "WIDtotal_fee";
+    public static final String amount = "amount";
+    public static final String product_id = "product_id";
+    public static final String WIDbody = "WIDbody";
+    public static final String WIDsubject = "WIDsubject";
+    public static final String unitId = "unitId";
+
+    public static final String urlPrefix = "urlPrefix";
+    public static final String urlHost = "urlHost";
+    public static final String urlSuffix = "urlSuffix";
+
+    public static final String hideToolbar = "hideToolbar";
+
+    public static final String Device = "Device";
+    public static final String DeviceId = "DeviceId";
+    public static final String BeginTime = "BeginTime";
+    public static final String EndTime = "EndTime";
+    public static final String EndFlg = "EndFlg";
+    public static final String TestWords = "TestWords";
+    public static final String TestMode = "TestMode";
+    public static final String TestNumber = "TestNumber";
+    public static final String UserAnswer = "UserAnswer";
+    public static final String wordcount = "wordcount";
+    public static final String categoryid = "categoryid";
+
+    public static final String date_time = "date_time";
+    public static final String device = "device";
+    public static final String deviceid = "deviceid";
+    public static final String package_fix = "package";
+    public static final String os = "os";
+    public static final String ads = "ads";
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.courses.coursechoose.CourseChooseActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/img_top_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_back" />
+
+        <TextView
+            android:id="@+id/tv_top_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:shadowColor="#ff000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="3.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/whitesmoke" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:padding="5dp"
+            android:entries="@array/course_page_drop"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@android:id/tabs"
+        app:tabMode="scrollable"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="?attr/colorPrimary" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.viewpager.widget.ViewPager
+        android:visibility="gone"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+include ':app', ':dlna-lib'
+
+//include ':imooclib'
+//project(':dailybonus').projectDir = new File(settingsDir, '../iyuba-demo/dailybonus')
+include ':word'

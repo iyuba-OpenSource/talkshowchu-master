@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/share"
+        android:title="分享"
+        android:icon="@drawable/ic_study_share"/>
+    <item android:id="@+id/pdf"
+        android:title="导出pdf"
+        android:icon="@drawable/ic_study_pdf"/>
+    <item android:id="@+id/refresh"
+        android:title="更新原文"
+        android:icon="@drawable/detail_refresh"/>
+</menu>

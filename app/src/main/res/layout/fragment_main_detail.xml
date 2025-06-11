@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myring="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/item_back"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/ll_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
+            app:cardCornerRadius="5dp">
+
+            <!--图片显示-->
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                tools:background="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lock"
+                android:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card_view"
+            android:orientation="vertical">
+
+            <!--上边的标题显示-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@color/WHITE">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/linear_download"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/BLACK"
+                        android:textSize="13sp"
+                        tools:text="做全新的自己" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:text="sdfsf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_download"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.iyuba.talkshow.newview.MyRing
+                        android:id="@+id/ring_download"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        myring:src="@drawable/ic_download" />
+
+                    <TextView
+                        android:id="@+id/tv_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/100"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--底部的显示进度-->
+            <LinearLayout
+                android:id="@+id/ring_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_toEndOf="@+id/card_view"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.iyuba.talkshow.newview.MyRing
+                        android:id="@+id/ring_hear"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        myring:src="@drawable/ic_home_hear_0" />
+
+                    <TextView
+                        android:id="@+id/tv_hear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/10"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.iyuba.talkshow.newview.MyRing
+                        android:id="@+id/ring_eval"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        myring:src="@drawable/ic_home_eval_0" />
+
+                    <TextView
+                        android:id="@+id/tv_eval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/10"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.iyuba.talkshow.newview.MyRing
+                        android:id="@+id/ring_word"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        myring:src="@drawable/ic_home_word_0" />
+
+                    <TextView
+                        android:id="@+id/tv_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/10"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_mooc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.iyuba.talkshow.newview.MyRing
+                        android:id="@+id/ring_mooc"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        myring:src="@drawable/ic_imooc" />
+
+                    <TextView
+                        android:id="@+id/tv_mooc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/%"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

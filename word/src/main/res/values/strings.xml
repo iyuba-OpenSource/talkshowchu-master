@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_step_no_finish">请完成前面的关卡</string>
+    <string name="alert_upload_exam_success">测评数据提交成功</string>
+    <string name="word_pass_test">单词闯关</string>
+    <string name="word_pass_next">下一题</string>
+    <string name="word_pass_ok">完成</string>
+    <string name="word_next">下一个</string>
+    <string name="video_loading_tip" />
+    <string name="wordpath" />
+    <string name="eval_ok_sound" translatable="false">正确发音：</string>
+    <string name="eval_self_sound" translatable="false">你的发音：</string>
+    <string name="eval_word_dict" translatable="false">单词释义：</string>
+    <string name="eval_word_score" translatable="false">恭喜您得分：</string>
+
+    <string name="app_share_content">爱语吧的这款应用{0}真的很不错啊~推荐！</string>
+
+    <string name="spell_again">再试一次</string>
+    <string name="spell_next">下一单词</string>
+    <string name="spell_finish">完成听写</string>
+    <string name="spell_answer">查看答案</string>
+
+    <string name="exercise_limit_letter">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,?!\'\"\-\ </string>
+</resources>

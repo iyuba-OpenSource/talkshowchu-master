@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/eval_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:src="@drawable/study_text_green" />
+
+    <TextView
+        android:id="@+id/eval_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/eval_image"
+        android:layout_toLeftOf="@+id/eval_score"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:text="word" />
+
+    <TextView
+        android:id="@+id/eval_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/score"
+        android:layout_marginLeft="8dp"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_green"
+        android:text="88" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="2dp"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:text="分" />
+
+</RelativeLayout>

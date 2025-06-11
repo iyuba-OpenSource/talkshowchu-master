@@ -1,0 +1,51 @@
+
+        juniorhuawei {
+            dimension "app"
+            applicationId "com.iyuba.primaryenglish" //华为背单词
+            versionCode 105
+            versionName "1.0.5"
+            manifestPlaceholders = [
+                    UMENG_APPKEY_VALUE: "5ec23cee167edd25a90001a3"
+            ]
+        }
+		
+MobSDK {
+    // 初中英语背单词
+    appKey "3093beb57f7bc"
+    appSecret "36dc224a32d645da2c0722ddd28766b0"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            Wechat {
+                appId "wxf4aa17b7cc6e2ce5"
+                appSecret "f58476591cbb5d6525ecfb9b919e9047"
+                userName "gh_afb25ac019c9"
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                appId "1107952186"
+                appKey "RiVk3nmTTr559jtG"
+            }
+            SinaWeibo {
+                appKey "2122951410"
+                appSecret "1da732328ff08bc9f4491d847d761e4f"
+                callbackUri "http://www.sharesdk.cn"
+            }
+            WechatMoments {
+                appId "wxf4aa17b7cc6e2ce5"
+                appSecret "f58476591cbb5d6525ecfb9b919e9047"
+            }
+            WechatFavorite {
+                appId "wxf4aa17b7cc6e2ce5"
+                appSecret "f58476591cbb5d6525ecfb9b919e9047"
+            }
+            QZone {
+                appId "1107952186"
+                appKey "RiVk3nmTTr559jtG"
+            }
+        }
+    }
+    SMSSDK {}
+}

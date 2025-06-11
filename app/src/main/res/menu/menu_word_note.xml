@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/wordmenu_query"-->
+        <!--android:icon="@drawable/search_menu_press"-->
+        <!--android:title="搜索"-->
+        <!--app:showAsAction="ifRoom"/>-->
+    <item
+        android:id="@+id/wordmenu_sync"
+        android:icon="@drawable/background2_press"
+        android:title="同步"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/wordmenu_edit"
+        android:icon="@drawable/button_edit_white"
+        android:title="编辑"
+        app:showAsAction="ifRoom"/>
+</menu>

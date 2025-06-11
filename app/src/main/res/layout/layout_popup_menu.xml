@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/share"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_study_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingBottom="8dp"
+            android:text="分享原文"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/detail_download"
+            android:layout_gravity="center_vertical"
+
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="下载"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/ic_study_pdf"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="导出PDF"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/detail_refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="更新原文"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--下载视频到相册-->
+    <LinearLayout
+        android:id="@+id/download_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/ic_save_video"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="保存视频到相册"
+            android:textSize="12sp"
+            android:drawablePadding="30dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

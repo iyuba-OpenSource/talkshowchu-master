@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_card_layerlist"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/front_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sen_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            style="@style/DubbingIndex"
+            android:background="@drawable/index_gray"
+            android:layout_marginRight="6dp"
+            android:padding="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sen_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:text="Like many people, Bree Britt once Dreamed of starting her own bussness."
+                android:textColor="#7A665C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sen_zh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sen_en"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:text="和许多人一样，Bree Britt曾梦想这自己创业。"
+                android:textColor="#ADAEAE"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/word_correct"
+                android:layout_width="180dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/sen_eval_bkg" >
+
+                <TextView
+                    android:id="@+id/chosn_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_toLeftOf="@+id/word_commit"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="单词发音有误"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/word_commit"
+                    android:layout_width="66dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/dialog_bkg"
+                    android:text="立即纠音"
+                    android:textColor="@color/color_gray"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sep_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:background="#E6E6E6" />
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.iyuba.talkshow.newview.RoundProgressBar
+                android:id="@+id/sen_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/sen_play_new"
+                android:clickable="true"
+                app:newCircleColor="#ffffff"
+                app:newCircleProgressColor="@color/blue"
+                app:newCircleWidth="2dp" />
+        </LinearLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@mipmap/sen_read_backborder">
+
+            <com.iyuba.talkshow.newview.RoundProgressBar
+                android:id="@+id/sen_i_read"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/sen_i_read"
+                android:clickable="true"
+                app:newCircleColor="#ffffff"
+                app:newCircleProgressColor="@color/blue"
+                app:newCircleWidth="2dp" />
+
+            <FrameLayout
+                android:id="@+id/sen_read_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true">
+
+                <com.iyuba.talkshow.newview.RoundProgressBar
+                    android:id="@+id/sen_read_playing"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/play_ok"
+                    app:newCircleColor="#ffffff"
+                    app:newCircleProgressColor="@color/blue"
+                    app:newCircleWidth="2dp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/sen_read_send"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/sen_read_send" />
+        </RelativeLayout>-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/sen_i_read"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/layer_record"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"/>
+            <!--<com.iyuba.talkshow.newview.RoundProgressBar
+                android:id="@+id/sen_i_read"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/layer_record"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                app:newCircleColor="#ffffff"
+                app:newCircleProgressColor="@color/blue"
+                app:newCircleWidth="2dp" />-->
+            <com.iyuba.talkshow.newview.RoundProgressBar
+                android:id="@+id/sen_read_playing"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/play_ok_new"
+                android:layout_marginStart="10dp"
+                app:newCircleColor="#ffffff"
+                app:newCircleProgressColor="@color/blue"
+                app:newCircleWidth="2dp" />
+            <com.iyuba.talkshow.newview.RoundProgressBar
+                android:id="@+id/sen_read_send"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/sen_read_send_new"
+                app:newCircleColor="#ffffff"
+                app:newCircleProgressColor="@color/blue"
+                app:newCircleWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sen_read_collect"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/share_press"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/sen_read_result"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

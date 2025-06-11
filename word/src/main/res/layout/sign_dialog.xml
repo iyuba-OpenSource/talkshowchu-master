@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/sign_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sign_pic"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/sign_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/sign_close_clicked"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/sign_pic"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_btn"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="恭喜你完成了闯关"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/sign_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wordtest_sign_btn"
+        android:layout_below="@id/sign_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="分享领红包"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#ffffff"/>
+
+
+</RelativeLayout>

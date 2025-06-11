@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unreleased_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/item_dubbing_corner"
+    android:descendantFocusability="blocksDescendants"
+    android:elevation="1dp"
+    android:gravity="bottom"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/delete_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:src="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/delete_iv"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/MyDubbingItem_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_iv"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/delete_iv"
+        android:layout_toRightOf="@id/image_iv" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/MyDubbingItem_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_iv"
+        android:layout_toLeftOf="@id/delete_iv"
+        android:layout_toRightOf="@id/image_iv"
+        android:textSize="13sp"
+        android:text="2014-06-25" />
+
+</RelativeLayout>

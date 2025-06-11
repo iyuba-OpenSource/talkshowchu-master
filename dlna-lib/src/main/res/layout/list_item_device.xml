@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="9dp">
+    <!--android:descendantFocusability="blocksDescendants"-->
+
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:focusableInTouchMode="true">-->
+    <!--android:foreground="?attr/selectableItemBackground"-->
+
+    <ImageView
+        android:id="@+id/choose"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dev_choose"/>
+
+
+    <TextView
+        android:id="@+id/tv_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_toLeftOf="@id/retry"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:maxLines="2"
+        android:textColor="#333333"
+        android:padding="6dp"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="点击重试"
+        android:textSize="13sp"
+        android:textColor="#B5BED1"/>
+
+</RelativeLayout>

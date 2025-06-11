@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyRing">
+        <attr name="src" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_outside_color" format="color" />
+        <attr name="border_inside_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="bubble">
+        <attr name="shadowColor" format="color" />
+        <attr name="padding" format="dimension" />
+        <attr name="halfBaseOfLeg" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DLRoundMenuView">
+        <attr name="RMHasCoreMenu" format="boolean" /> <!-- 是否有中间OK按钮 -->
+        <attr name="RMCoreMenuNormalBackgroundColor" format="color" /> <!-- 正常情况下的中间按钮的背景颜色 -->
+        <attr name="RMCoreMenuStrokeColor" format="color" /> <!-- 中间按钮的描边颜色 -->
+        <attr name="RMCoreMenuStrokeSize" format="dimension" /> <!-- 中间按钮的描边边框大小 -->
+        <attr name="RMCoreMenuSelectedBackgroundColor" format="color" /> <!-- 中间按钮选中时的背景颜色 -->
+        <attr name="RMCoreMenuDrawable" format="reference" /> <!-- 中心按钮图片 -->
+        <attr name="RMCoreMenuRoundRadius" format="dimension" /> <!-- 中心按钮圆形半径 -->
+        <attr name="RMRoundMenuNumber" format="integer" /> <!-- 菜单数量 -->
+        <attr name="RMRoundMenuDeviationDegree" format="integer" /> <!-- 菜单偏移角度 -->
+        <attr name="RMRoundMenuDrawable" format="reference" /> <!-- 菜单图片 -->
+        <attr name="RMIsDrawLineToCenter" format="boolean" /> <!-- 是否画每个菜单扇形到中心点的直线 -->
+        <attr name="RMRoundMenuNormalBackgroundColor" format="color" /> <!-- 菜单正常背景颜色 -->
+        <attr name="RMRoundMenuSelectedBackgroundColor" format="color" /> <!-- 菜单点击背景颜色 -->
+        <attr name="RMRoundMenuStrokeColor" format="color" /> <!-- 菜单描边颜色 -->
+        <attr name="RMRoundMenuStrokeSize" format="dimension" /> <!-- 菜单描边宽度 -->
+        <attr name="RMRoundMenuDistance" format="fraction" /> <!-- 菜单图片与中心点的距离 百分数 -->
+    </declare-styleable>
+
+    <declare-styleable name="circleProgressBar">
+        <attr name="newCircleColor" format="color" />
+        <attr name="newCircleProgressColor" format="color" />
+        <attr name="newCircleWidth" format="dimension"></attr>
+        <attr name="newTextColor" format="color" />
+        <attr name="newTextSize" format="dimension" />
+        <attr name="newMax" format="integer"></attr>
+        <attr name="newTextIsDisplayable" format="boolean"></attr>
+        <attr name="newCircleMargin" format="dimension"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--选词控件-->
+    <declare-styleable name="SelectWordTextView">
+        <attr name="selectColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<Wechat SortId="1" AppId="wxb104da7986bda128" AppSecret="7859d78196c14dd526e1806cf2ffe02a" UserName="gh_f6acd8765d6b" Path="/pages/index/index" WithShareTicket="true" MiniprogramType="2" />
+<QQ SortId="2" AppId="1107952186" AppKey="RiVk3nmTTr559jtG" />
+<SinaWeibo SortId="6" AppKey="2122951410" AppSecret="1da732328ff08bc9f4491d847d761e4f" RedirectUrl="http://www.sharesdk.cn" />
+<WechatMoments SortId="3" AppId="wxb104da7986bda128" AppSecret="7859d78196c14dd526e1806cf2ffe02a" />
+<WechatFavorite SortId="4" AppId="wxb104da7986bda128" AppSecret="7859d78196c14dd526e1806cf2ffe02a" />
+<QZone SortId="5" AppId="1107952186" AppKey="RiVk3nmTTr559jtG" />
+</DevInfor>

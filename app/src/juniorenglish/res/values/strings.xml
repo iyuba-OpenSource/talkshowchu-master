@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">初中英语口语秀</string>
+<!--    <string name="app_name">初中英语人教版</string>-->
+    <string name="tencent_share_id">tencent1106733222</string>
+    <string name="iyuba_group">初中英语官方群</string>
+    <string name="iyuba_official">初中英语公众号</string>
+
+    <string name="push_huawei_id" >100238933</string>
+    <string name="push_huawei_secret">5aea7fb3a7db0a08ff985b34d5bc5b99</string>
+    <string name="push_mi_id" >2882303761517751021</string>
+    <string name="push_mi_key"  >5281712613928</string>
+    <string name="push_mi_secret"  >3ZVSTSvO7QEgvcZxTPSr5g==</string>
+    <string name="push_oppo_id"  >3686206</string>
+    <string name="push_oppo_key"  >8c800007592d4d9c986b3aaf7eeb019d</string>
+    <string name="push_oppo_secret"  >c3599e0077144769a5e03b48e06e3947</string>
+    <string name="push_oppo_master_secret" >3b34d27e654f4214914303fea451b1dd</string>
+
+    <string name="file_provider_name_personal">com.iyuba.talkshow.juniorenglish.fileprovider</string>
+</resources>

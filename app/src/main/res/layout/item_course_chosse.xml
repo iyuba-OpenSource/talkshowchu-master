@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        tools:src="@drawable/default_pic_v_new"
+        android:scaleType="fitStart"
+        android:layout_width="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="116dp" />
+
+    <TextView
+        android:id="@+id/title"
+        tools:text="第三课好哒好哒"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/views"
+        tools:text="121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

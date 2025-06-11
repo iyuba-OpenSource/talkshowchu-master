@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="iyubi_amounts">
+        <item>210</item>
+        <item>650</item>
+        <item>1100</item>
+        <item>6600</item>
+        <item>12000</item>
+    </integer-array>
+
+    <string-array name="detail_page_title">
+        <item>简介</item>
+        <item>排行</item>
+        <item>专辑</item>
+        <item>相关</item>
+    </string-array>
+
+    <string-array name="text_eval_title">
+        <item>原文</item>
+        <item>评测</item>
+        <item>排行</item>
+    </string-array>
+
+    <string-array name="detail_page_title_default">
+        <item>简介</item>
+        <item>排行</item>
+        <item>相关</item>
+    </string-array>
+
+    <string-array name="course_page_drop">
+        <item>人教版</item>
+        <item>外研社</item>
+    </string-array>
+
+    <string-array name="course_page_catagory_renjiao">
+        <item>新起点</item>
+        <item>PEP</item>
+        <item>精通</item>
+        <item>初中</item>
+    </string-array>
+
+    <string-array name="course_page_catagory_id_renjiao">
+        <item>313</item>
+        <item>314</item>
+        <item>315</item>
+        <item>316</item>
+    </string-array>
+
+    <string-array name="course_page_catagory_waiyan">
+        <item>一起点</item>
+        <item>三起点</item>
+    </string-array>
+
+
+    <string-array name="course_page_catagory_id_waiyan">
+        <item>318</item>
+        <item>317</item>
+    </string-array>
+
+    <!-- old stuff transfer, should be deprecate -->
+    <string-array name="my_dubbing_page_title">
+        <item>已发布</item>
+        <item>草稿箱</item>
+        <item>已下载</item>
+
+        <!--        <item>未发布</item>-->
+    </string-array>
+
+    <string-array name="hint">
+        <item>下拉列表可以刷新</item>
+        <item>您可以只播放收藏列表中的文章</item>
+        <item>消息中心查看其他人的回复</item>
+        <item>点击最新可以查看其他类别</item>
+        <item>点击原文单词可以查询释义</item>
+        <item>长按原文可以跳转到指定段落</item>
+        <item>可以在设置中选择功能</item>
+        <item>“发现”中有精彩内容等待您体验</item>
+        <item>单词同步功能可以将您在其他应用中收藏的单词同步至本应用</item>
+    </string-array>
+    <string-array name="promotion_channels">
+        <item>@string/channel_none</item>
+    </string-array>
+
+    <string-array name="promotion_channel_images">
+        <item>@drawable/base</item>
+    </string-array>
+
+    <string-array name="iyubi_prices">
+        <item>19.9</item>
+        <item>59.9</item>
+        <item>99.9</item>
+        <item>599</item>
+        <item>999</item>
+    </string-array>
+
+    <string-array name="pay_methods_images">
+        <item>@drawable/ic_pay_alipay</item>
+        <item>@drawable/ic_pay_wxpay</item>
+    </string-array>
+
+    <string-array name="pay_method_names">
+        <item>支付宝支付</item>
+        <item>微信支付</item>
+    </string-array>
+
+    <string-array name="pay_method_hints">
+        <item>推荐有支付宝账号的用户使用</item>
+        <item>推荐安装微信5.0及以上版本的使用</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>保密</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+    <!--小视频分类-->
+    <string-array name="headline_video_category_names">
+        <item>少儿</item>
+        <item>小学</item>
+        <item>初中</item>
+    </string-array>
+    <string-array name="headline_video_category_codes">
+        <item>@integer/headline_child</item>
+        <item>@integer/headline_primary</item>
+        <item>@integer/headline_junior</item>
+    </string-array>
+
+    <!--书虫-->
+    <string-array name="BookwormLevel">
+        <item>入门级</item>
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+        <item>四级</item>
+        <item>五级</item>
+        <item>六级</item>
+    </string-array>
+    <!--剑桥彩绘-->
+    <string-array name="NewCamstoryColor">
+        <item>入门级</item>
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+        <item>四级</item>
+        <item>五级</item>
+    </string-array>
+    <!--剑桥非彩绘-->
+    <string-array name="NewCamstory">
+        <item>入门级</item>
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+        <item>四级</item>
+        <item>五级</item>
+        <item>六级</item>
+    </string-array>
+</resources>

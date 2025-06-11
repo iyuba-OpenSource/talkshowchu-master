@@ -1,0 +1,52 @@
+
+        juniortalkshow {
+            dimension "app"
+            applicationId "com.iyuba.talkshow.junior"  //初中英语
+            versionCode 249
+            versionName "2.9.0827"
+
+            manifestPlaceholders = [
+                    UMENG_APPKEY_VALUE: "5ec23cee167edd25a90001a3"
+            ]
+        }
+		
+MobSDK {
+    // 新概念初中英语
+    appKey "da2d6fdc5cb2"
+    appSecret "6bd3183af2d993d296d23a28ef7aeb13"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            Wechat {
+                appId "wxb104da7986bda128"
+                appSecret "fd65c9ae6c3ad30e48d4ecf14cc6e0b6"
+                userName "gh_afb25ac019c9"
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                appId "1107952186"
+                appKey "RiVk3nmTTr559jtG"
+            }
+            SinaWeibo {
+                appKey "2122951410"
+                appSecret "1da732328ff08bc9f4491d847d761e4f"
+                callbackUri "http://www.sharesdk.cn"
+            }
+            WechatMoments {
+                appId "wxb104da7986bda128"
+                appSecret "fd65c9ae6c3ad30e48d4ecf14cc6e0b6"
+            }
+            WechatFavorite {
+                appId "wxb104da7986bda128"
+                appSecret "fd65c9ae6c3ad30e48d4ecf14cc6e0b6"
+            }
+            QZone {
+                appId "1107952186"
+                appKey "RiVk3nmTTr559jtG"
+            }
+        }
+    }
+    SMSSDK {}
+}

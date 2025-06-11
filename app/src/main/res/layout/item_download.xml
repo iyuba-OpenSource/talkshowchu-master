@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/download_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/item_dubbing_corner"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="bottom"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/delete_iv"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/checkbox_checked" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        app:cardCornerRadius="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/delete_iv"
+        android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/MyDubbingItem_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/card_view"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/delete_iv"
+        android:layout_toRightOf="@id/card_view"
+        android:maxLines="2"
+        android:textSize="12sp"
+        tools:text="sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/MyDubbingItem_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/card_view"
+        android:layout_toLeftOf="@id/delete_iv"
+        android:layout_toRightOf="@id/card_view"
+        android:text="2014-06-25"
+        android:textSize="13sp" />
+
+</RelativeLayout>

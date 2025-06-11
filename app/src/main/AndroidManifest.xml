@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iyuba.talkshow"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowNativeHeapPointerTagging="false"
+        android:name=".TalkShowApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppsTheme.NoActionBar"
+        tools:replace="android:theme,android:allowBackup,android:networkSecurityConfig">
+        <activity android:name=".ui.courses.coursedetail.CourseDetailActivity" />
+        <activity android:name=".ui.courses.coursechoose.CourseChooseActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.courses.coursechoose.CourseKouActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".ui.welcome.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.youdao.sdk.common.YouDaoBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            tools:replace="android:configChanges" /> <!-- YouDaoNativeBrowser用于应用详情页，为必选配置 -->
+        <activity
+            android:name="com.youdao.sdk.extra.common.YouDaoBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name="com.youdao.sdk.listvideo.YouDaoListVideoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            tools:replace="android:configChanges" />
+        <activity
+            android:name=".newce.ContianerActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newce.ContainActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newce.study.StudyActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".newce.comment.CommentActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deletlesson.LessonDeleteActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTop"
+            android:label="@string/me_downloaded_books"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.words.WordNoteActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.dubbing.DubbingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.detail.ranking.watch.WatchDubbingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.preview.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.feedback.FeedbackActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTop"
+            android:label="@string/feedback"
+            android:screenOrientation="portrait" />
+        <!--<service
+            android:name="com.iyuba.talkshow.data.Background"
+            android:enabled="true"
+            android:persistent="true"
+            android:theme="@android:style/Theme.NoTitleBar" />-->
+        <!--<activity
+            android:name=".ui.user.login.login_old.LoginActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/user_login"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".ui.user.register.phone.RegisterByPhoneActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/user_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.register.email.RegisterActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/user_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.register.submit.RegisterSubmitActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/user_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.login.changeName.ChangeNameActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/user_change"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.image.UploadImageActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/upload_image"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.web.WebActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.web.SendBookActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.web.OfficialActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.vip.buyiyubi.BuyIyubiActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/buy_iyubi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.vip.payorder.PayOrderActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/pay_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lil.help_fix.ui.payOrder.PayOrderNewActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/pay_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.detail.ShowUserInfoActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/person_detail_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.edit.EditUserInfoActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/edit_person_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.edit.ImproveUserActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/edit_person_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.me.MeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/me"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.me.LocalActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/me_local_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.me.SyncActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/me_sync_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.me.ClockInfoActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/me_clock_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.me.CalendarActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/me_clock_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.help.HelpUseActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name=".ui.user.collect.CollectionActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/my_collection"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".ui.user.download.DownloadActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:label="@string/my_download"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.me.dubbing.MyDubbingActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:launchMode="singleTop"
+            android:label="@string/my_dubbing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.rank.RankActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.rank.dubbing.DubbingListActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.vip.buyvip.NewVipCenterActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sign.SignActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|locale"
+            android:windowDisablePreview="true"
+            android:windowIsTranslucent="false" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:launchMode"
+            android:launchMode="standard">
+        </activity>
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- <data android:scheme="tencent100836790" /> -->
+                <data android:scheme="@string/tencent_share_id" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.iyuba.wordtest.ui.test.WordLineActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.iyuba.wordtest.ui.test.WordClearActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <!--<activity android:name=".ui.user.login.fix.FixLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>-->
+        <activity android:name=".lil.user.ui.NewLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".newce.study.dubbingNew.DubbingAboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.PreviewBookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.preSaveData.PreSaveDataActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <!--后面增加的书虫数据-->
+        <activity android:name=".lil.help_fix.ui.study.StudyActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.choose.ChooseActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.study.rank.rank_detail.RankDetailActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.collect.chapter.ChapterCollectActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.junior.choose.JuniorChooseActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.collect.word.WordCollectActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.study.word.wordTrain.WordTrainActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.me_wallet.WalletListActivity"
+            android:exported="false"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lil.help_fix.ui.main.ui.video.VideoShowActivity"
+            android:exported="false"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"/>
+        <!--查询界面-->
+        <activity android:name=".newce.search.newSearch.NewSearchActivity"
+            android:exported="false"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"/>
+        <!--新的配音界面-->
+        <activity android:name=".lil.help_fix.ui.dubbing.DubbingNewActivity"
+            android:exported="false"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"/>
+        <!--广告容器界面-->
+        <activity android:name=".lil.help_fix.ui.ad.ui.AdContainerActivity"
+            android:exported="false"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name=".lil.novel.service.FixBgService"
+            android:enabled="true"
+            android:persistent="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <service
+            android:name=".newce.study.read.newRead.service.PrimaryBgPlayService"
+            android:enabled="true"
+            android:persistent="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+<!--        <meta-data-->
+<!--            android:name="UMENG_APPKEY"-->
+<!--            android:value="5ec23cee167edd25a90001a3" />-->
+        <!-- <activity -->
+        <!-- android:name="com.google.android.gms.ads.AdActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" -->
+        <!-- android:theme="@android:style/Theme.Translucent" /> -->
+        <!-- This meta-data tag is required to use Google Play Services. -->
+<!--        <meta-data-->
+<!--            android:name="UMENG_CHANNEL"-->
+<!--            android:value="${UMENG_CHANNEL_VALUE}" />-->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--推送相关-->
+        <!--<meta-data
+            android:name="XPush_MIPush_1003"
+            android:value="com.xuexiang.xpush.xiaomi.XiaoMiPushClient" />
+        <meta-data
+            android:name="XPush_HuaweiPush_1002"
+            android:value="com.xuexiang.xpush.huawei.HuaweiPushClient" />
+
+        <receiver android:name="com.iyuba.pushlib.CustomPushReceiver"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="com.xuexiang.xpush.core.action.RECEIVE_CONNECT_STATUS_CHANGED" />
+                <action android:name="com.xuexiang.xpush.core.action.RECEIVE_NOTIFICATION" />
+                <action android:name="com.xuexiang.xpush.core.action.RECEIVE_NOTIFICATION_CLICK" />
+                <action android:name="com.xuexiang.xpush.core.action.RECEIVE_MESSAGE" />
+                <action android:name="com.xuexiang.xpush.core.action.RECEIVE_COMMAND_RESULT" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".data.SyncService" /> &lt;!&ndash; 引入了xpush-xiaomi库 &ndash;&gt;
+        <service
+            android:name="com.iyuba.pushlib.PushMessageService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service> &lt;!&ndash; 引入了xpush-huawei库 &ndash;&gt;
+        <service
+            android:name="com.heytap.mcssdk.PushService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.heytap.mcssdk.AppPushService"
+            android:permission="com.heytap.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>-->
+
+        <service
+            android:name="com.youdao.sdk.common.YouDaoAppService"
+            android:enabled="true" />
+
+        <!--存储操作-->
+        <meta-data android:name="ScopedStorage" android:value="true" />
+    </application>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--部分不再使用或者第三方中的权限-->
+<!--    <uses-permission android:name="android.permission.ACCESS_GPS" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>-->
+<!--    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+<!--    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />-->
+
+    <!--部分非必须需要去掉的权限-->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"
+        tools:node="remove"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"
+        tools:remove="true"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.READ_SMS"
+        tools:node="remove"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.SEND_SMS"
+        tools:node="remove"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:node="remove"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:node="remove"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <!--微信跳转-->
+    <queries>
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+    <uses-sdk tools:overrideLibrary="     tv.danmaku.ijk.media.player_x86_64,     tv.danmaku.ijk.media.player,     tv.danmaku.ijk.media.player_arm64,     tv.danmaku.ijk.media.player_armv7a" />
+
+    <!--android10的apk安装-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+</manifest>

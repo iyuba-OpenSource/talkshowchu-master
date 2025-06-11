@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/pay_order_toolbar"
+        layout="@layout/partial_toolbar"/>
+
+    <!--提示信息-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/red"
+        android:layout_margin="10dp"
+        android:text="虚拟物品无法退换，请谨慎购买!"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <!--订单信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcome_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textSize="16sp"
+                android:textColor="@color/GRAY" />
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/welcome_tv"
+                android:layout_toRightOf="@id/welcome_tv"
+                android:textColor="#393939"
+                android:textSize="16sp"
+                tools:text="iyuba"/>
+
+            <TextView
+                android:id="@+id/order_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome_tv"
+                android:layout_marginTop="15dp"
+                android:text="@string/payorder"
+                android:textSize="16sp"
+                android:textColor="@color/GRAY" />
+
+            <TextView
+                android:id="@+id/order_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/order_tv"
+                android:layout_toRightOf="@id/order_tv"
+                android:textColor="#393939"
+                android:textSize="16sp"
+                tools:text="1100 iyubi" />
+
+            <TextView
+                android:id="@+id/amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_value_tv"
+                android:layout_marginTop="15dp"
+                android:text="@string/need_pay_rmb"
+                android:textColor="@color/GRAY"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/amount_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/amount_tv"
+                android:layout_toRightOf="@id/amount_tv"
+                android:textColor="#F07203"
+                android:textSize="16sp"
+                tools:text="19.9元" />
+        </RelativeLayout>
+        <!--抵扣价格-->
+        <LinearLayout
+            android:id="@+id/deduction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/GRAY"
+                android:textSize="16sp"
+                android:text="钱包抵扣"/>
+            <TextView
+                android:id="@+id/userMoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="(可用钱包：10元)"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:id="@+id/clickDeduction_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/deduction_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F07203"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:text="5元"/>
+                <ImageView
+                    android:id="@+id/showDeduction_iv"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_next_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--支付方式-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/choose_pay_method"
+            android:textColor="#818181"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pay_order_methods_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#dedede"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+    </LinearLayout>
+
+    <!--会员协议-->
+    <TextView
+        android:id="@+id/vip_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"/>
+
+    <!--支付按钮-->
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_confirm_btn"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/pay_confirm"
+        android:textColor="@color/WHITE"
+        android:textSize="18sp"/>
+
+</LinearLayout>

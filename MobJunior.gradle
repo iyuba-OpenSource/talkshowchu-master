@@ -1,0 +1,60 @@
+//com.iyuba.talkshow.juniorenglish（英语口语秀）
+
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    // 初中英语
+
+    //北京爱语吧
+//    appKey "2f6dcf8b701cc"
+//    appSecret "0c2dd1bfba3c682712b7c7982985edc2"
+
+    //山东爱语吧
+    appKey "38863fc450eba"
+    appSecret "63d28dd701041c033a6b4c135ab5fbd6"
+
+    SecVerify {
+//        version '3.0.7'
+    }
+    ShareSDK {
+        loopShare true
+        devInfo {
+            Wechat {
+                sortId 1
+                appId "wxa512f1de837454c6"
+                appSecret "91305672e3e2bcacc7067427dbdb8771"
+                userName "gh_f6acd8765d6b"
+                path "/pages/index/index"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                sortId 2
+                appId "1110590841"
+                appKey "G25kuVgPoKbOU2vE"
+            }
+            SinaWeibo {
+                sortId 6
+                appKey "2122951410"
+                appSecret "1da732328ff08bc9f4491d847d761e4f"
+                callbackUri "http://www.sharesdk.cn"
+            }
+            WechatMoments {
+                sortId 3
+                appId "wxa512f1de837454c6"
+                appSecret "91305672e3e2bcacc7067427dbdb8771"
+            }
+            WechatFavorite {
+                sortId 4
+                appId "wxa512f1de837454c6"
+                appSecret "91305672e3e2bcacc7067427dbdb8771"
+            }
+            QZone {
+                sortId 5
+                appId "1110590841"
+                appKey "G25kuVgPoKbOU2vE"
+            }
+        }
+    }
+    SMSSDK {}
+}

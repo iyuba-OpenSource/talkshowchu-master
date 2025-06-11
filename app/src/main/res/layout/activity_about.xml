@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/about_toolbar"
+        layout="@layout/partial_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_toolbar">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/logo_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="42sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/textView1"
+                android:layout_centerHorizontal="true"
+                android:text="huawei"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/about_app"
+                android:textColor="#542f11" />
+
+            <RelativeLayout
+                android:id="@+id/about_360shoufa_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView1"
+                android:layout_alignLeft="@+id/logo_iv"
+                android:layout_alignRight="@+id/logo_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/logo360"
+                    android:layout_width="96dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo360" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/logo360"
+                    android:gravity="center"
+                    android:text="更多爱语吧应用推荐使用360手机助手下载"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/about_more_app_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/about_360shoufa_rl"
+                android:layout_alignLeft="@+id/about_360shoufa_rl"
+                android:layout_alignRight="@+id/about_360shoufa_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_shape"
+                android:text="@string/app_more"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/about_app_update_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/about_more_app_btn"
+                android:layout_alignLeft="@id/about_more_app_btn"
+                android:layout_alignRight="@id/about_more_app_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_shape"
+                android:paddingLeft="50dp"
+                android:paddingRight="0dp">
+
+                <TextView
+                    android:id="@+id/about_version_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="软件版本:版本号2.0"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/about_hasnew_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/new_stuff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/about_app_update_rl"
+                android:layout_alignLeft="@id/about_app_update_rl"
+                android:layout_alignRight="@id/about_app_update_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_shape"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/weixin_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/weixin_logo"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/weixin_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/weixin_icon"
+                    android:background="@android:color/transparent"
+                    android:text="@string/weixin"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/custome_service_part"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/relativeLayout2"
+                android:layout_alignLeft="@id/about_app_update_rl"
+                android:layout_alignRight="@id/about_app_update_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_shape"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/custom_service_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/custom_service_qq"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/custom_clear_user"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/custome_service_part"
+                android:layout_alignLeft="@id/about_app_update_rl"
+                android:layout_alignRight="@id/about_app_update_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button_shape"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/custom_clear_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@android:color/transparent"
+                    android:text="注销用户"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/about_download_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_below="@+id/about_app_update_rl"
+                android:layout_alignLeft="@+id/about_360shoufa_rl"
+                android:layout_alignRight="@+id/about_360shoufa_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--备案号-->
+    <TextView
+        android:id="@+id/filingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about_corner_logo"
+        android:layout_below="@id/scrollLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:hint="备案号"
+
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/about_corner_logo"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo_small" />
+
+</RelativeLayout>

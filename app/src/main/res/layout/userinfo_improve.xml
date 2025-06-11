@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_summary_personal"
+        app:tint="@color/colorPrimary" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ToolbarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:text="个人信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/user_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:scrollHorizontally="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/word_clear" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_title_cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_toolbar"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="完善个人信息"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/tv_title_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_cn"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="IMPROVE PERSONAL INFORMATION"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/User_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_en"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/card_sex"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_me_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="性别"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/sex_go"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="男生"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/sex_go"
+                    android:layout_width="12dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/card_age"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_me_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="年龄"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/age_go"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="90s"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/age_go"
+                    android:layout_width="12dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/card_area"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_me_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="地区"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/area_go"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="北京市"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/area_go"
+                    android:layout_width="12dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#dcdcdc" />
+
+            <RelativeLayout
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_me_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="身份"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/title_go"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="大学生"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/title_go"
+                    android:layout_width="12dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26dp"
+                    android:src="@drawable/go" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_card"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="为了更好的为您提供智能化学习英语服务，请完善个人信息。"
+        android:textColor="@color/theme_color"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_button_blue_15_personal"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:text="提交"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/vip_menu_qq_service"
+        android:icon="@drawable/ic_qq_white_24dp"
+        android:title="@string/vip_center_qq_contact"
+        app:showAsAction="always"/>
+</menu>

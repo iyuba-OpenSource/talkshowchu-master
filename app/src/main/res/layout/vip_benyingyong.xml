@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/benyingyong_ll"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/des_benyingyong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:lineSpacingMultiplier="1"
+        android:padding="4dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#FF75769C"
+        android:textSize="14sp" />
+    <RelativeLayout
+        android:id="@+id/rl_benyingyong1"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <TextView
+            android:id="@+id/price_benyingyong1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥30"
+            style="@style/priceStyle" />
+        <CheckBox
+            android:id="@+id/cb_benyingyong1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本应用会员1个月"
+            android:paddingHorizontal="10dp"
+            style="@style/goldCheckBoxStyle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_benyingyong2"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <TextView
+            android:id="@+id/price_benyingyong2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥99"
+            style="@style/priceStyle" />
+        <CheckBox
+            android:id="@+id/cb_benyingyong2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本应用会员12个月"
+            android:paddingHorizontal="10dp"
+            style="@style/goldCheckBoxStyle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_benyingyong3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <TextView
+            android:id="@+id/price_benyingyong3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥199"
+            style="@style/priceStyle" />
+        <CheckBox
+            android:id="@+id/cb_benyingyong3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本应用会员36个月"
+            android:paddingHorizontal="10dp"
+            style="@style/goldCheckBoxStyle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_benyingyong4"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <TextView
+            android:id="@+id/price_benyingyong4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥299"
+            style="@style/priceStyle" />
+        <CheckBox
+            android:id="@+id/cb_benyingyong4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本应用会员60个月"
+            android:paddingHorizontal="10dp"
+            style="@style/goldCheckBoxStyle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E0E0E0" />
+    </RelativeLayout>
+
+</LinearLayout>
